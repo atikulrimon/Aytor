@@ -1,0 +1,1484 @@
+$primaryColor1: #FF6F61;
+$PrimayColor2: #FF5645;
+$primaryColor3: #151A32;
+$lightBgColor: #F1F1F1;
+$bgColor: #F1F3F4;
+$blackColor: #000000;
+$aseColor: #A6AAB7;
+$commonColor: #FFFFFF;
+$textColor: #11161E;
+$paragraphColor: #444444;
+$grayColor: #828282;
+$primaryFont: 'Josefin Sans', sans-serif;
+$secondaryFont: 'Roboto', sans-serif;
+$secondaryFont: 'Roboto', sans-serif;
+$shadowOne: 0px 3px 10px rgba(0, 0, 0, 0.08);
+$shadowTwo: 0px 0px 50px rgba(21, 26, 50, 0.1);
+$shadowThree: 0px 5px 30px rgba(17, 22, 30, 0.08);
+
+
+// Banner Style start
+#banner{
+    padding: 0 0;
+
+    .bannerSliderItem{
+        height: 800px;
+        background-size: cover !important;
+        background-position: center !important;
+        transition: 0.5s;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        @include largeDevice(){
+            height: 545px;
+        }
+        @include mediumDevice(){
+            height: 451px;
+        }
+        @include smallDevice(){
+            height: 350px;
+        }
+        @include xSmallDeviec(){
+            height: 265px;
+        }
+        
+        &.slick-active{
+            .bannerText{
+                .bannerInfoSlide1{
+                    transform: translateY(0px);
+                    .btn1{
+                        background: #000; 
+                    }
+                }
+                .bannerInfoSlide2{
+                    transform: translateY(0px);
+                    
+                }
+            }
+        }
+    }
+
+    .bannerSlider{
+        .bannerText{
+            .bannerBtn{
+                &:nth-child(3){
+                    background-color: $blackColor;
+                }
+                
+            }
+
+            .bannerInfoSlide1{
+                transform: translateY(-200px);
+                transition: 0.9s;
+            };
+            .bannerInfoSlide2{
+                transform: translateY(-200px);
+                transition: 0.9s;
+            };
+
+            h6{
+                font-size: 18px;
+                font-weight: 600;
+                color: $commonColor;
+                line-height: 28px;
+                @include largeDevice(){
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+                
+                @include mediumDevice(){
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+
+                @include smallDevice(){
+                    font-size: 12px;
+                    line-height: 18px
+                }
+                @include xSmallDeviec(){
+                    display: none;
+                }
+                
+                
+            };
+
+            h1{
+                font-size: 64px;
+                font-weight: 700;
+                color: $commonColor;
+                line-height: 74px;
+                margin: 14px 0 16px;
+                @include largeDevice(){
+                    font-size: 42px;
+                    line-height: 50px;
+                }
+                @include mediumDevice(){
+                    font-size: 35px;
+                    line-height: 40px;
+                }
+                @include smallDevice(){
+                    font-size: 30px;
+                    line-height: 35px
+                }
+                @include xSmallDeviec(){
+                    font-size: 37px;
+                    line-height: 40px
+                }
+            }
+            p{
+                font-size: 16px;
+                color: $commonColor;
+                line-height: 28px;
+                font-family: $secondaryFont;
+                margin-bottom: 30px;
+                @include largeDevice(){
+                    font-size: 12px;
+                    line-height: 25px;
+                }
+                @include mediumDevice(){
+                    font-size: 10px;
+                    line-height: 20px;
+                }
+                @include smallDevice(){
+                    font-size: 9px;
+                    line-height: 15px
+                }
+                @include xSmallDeviec(){
+                    display: none;
+                }
+            }
+            .dBtn1{
+                background-color: $blackColor;
+            }
+            .btn1:hover{
+                background-color: $commonColor;
+                color: $PrimayColor2;
+            }
+        }
+
+        .bannerTextDef{
+            h6,h1,p{
+                color: $blackColor;
+            }
+        }
+
+        /* Dots Style */
+        .bannerSliderDots{
+            display: flex;
+            position: absolute !important;
+            top: 600px;
+            left: 140px;
+            
+            @include largeDevice(){
+                top: 450px;
+                left: 135px;
+            }
+
+            @include customResponsive(0px,992px){
+                transform: scale(0);
+            }
+
+
+            li{
+                margin-right: 5px;
+                line-height: 0;
+                button{
+                    font-size: 0;
+                    border: none;
+                    width: 10px;
+                    height: 6px;
+                    border-radius: 5px;
+                    background-color: $commonColor;
+                    transition: 0.5s;
+                }
+                &.slick-active button{
+                    background-color: $primaryColor1;
+                    width: 26px;
+                }
+                &:nth-child(2).slick-active button{
+                    background-color: $primaryColor3;
+                }
+        
+            }
+
+        }
+    }
+    
+}
+// Banner Style End
+
+
+// Feature Category Start
+#featured_Category{
+    margin: 95px 0;
+    @include xSmallDeviec(){
+        margin: 50px 0;
+    }
+    @include smallDevice(){
+        margin: 70px 0;
+    }
+    .featuredImg3{
+        position: relative;
+        .featuredOverlay{
+            position: absolute;
+            inset: 0;
+            margin: 20px;
+            z-index: 10000;
+            color: $commonColor;
+            transform: scale(0);
+            transition: 0.5s;
+            &::after{
+                content: '';
+                position: absolute;
+                inset: 0;
+                background-color: $blackColor;
+                opacity: 0.5;
+                transform: scale(0);
+                transition: 0.5s;
+            }
+            .featureOverlayText{
+                text-align: center;
+                z-index: 1000;
+                h6{
+                    opacity: 1;
+                    font-size: 30px;
+                    font-weight: 700;
+                    line-height: 40px;
+                    color: $commonColor;
+                    margin-bottom: 12px;
+                    transition: 0.5s;
+                    &:hover{
+                        color: $PrimayColor2;
+                    }
+                }
+                a{
+                    opacity: 1;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 28px;
+                    color: $commonColor;
+                    transition: 0.5s;
+                    position: relative;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 50px;
+                        height: 20px;
+                        color: $blackColor;
+                    }
+                    &:hover{
+                        color: $PrimayColor2;
+                    }
+                }
+            }
+        }
+        &:hover{
+            .featuredOverlay{
+                transform: scale(1);
+                &::after{
+                    transform: scale(1);
+                }
+            }
+        }
+        
+    }
+}
+// Fetured Cetegroy Style End
+
+
+// New Arrivals Section Start
+#newArrivals{
+    margin-bottom: 100px;
+    @include smallDevice(){
+        margin-bottom: 70px;
+    }
+    .productItem{
+        position: relative;
+        overflow: hidden;
+        margin: 0 12px;
+        border: 1px solid #F1F3F4;
+        padding-bottom: 28px;
+
+        .productThumb{
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            img{
+                &:last-child{
+                    position: absolute;
+                    inset: 0;
+                    z-index: 1000;
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+            }
+        }
+
+        .productInfo{
+            margin-top: 24px;
+            ins{
+                font-size: 16px;
+                color: #444444;
+                line-height: 26px;
+                text-decoration: none;
+            }
+            del{
+                font-size: 16px;
+                color: #BDBDBD;
+                line-height: 26px;
+                margin-left: 10px;
+            }
+            h6 a{
+                font-size: 18px;
+                font-weight: 600;
+                color: $textColor;
+                line-height: 28px;
+                margin: 5px 0 11px;
+                display: inline-block;
+                transition: 0.5s;
+                &:hover{
+                    color: $PrimayColor2;
+                }
+            }
+            .product_rating{
+                i{
+                    font-size: 12px;
+                    color: $primaryColor1;
+                }
+            }
+        }
+
+        &:hover{
+            .productThumb img:last-child{
+                opacity: 1;
+                transform: scale(1.1);
+            }
+        }
+
+        .product_actionBtn{
+            position: absolute;
+            top: 40px;
+            right: -40px;
+            z-index: 10001;
+            transition: 0.5s;
+            opacity: 0;
+
+            ul li a{
+                color: $primaryColor3;
+                align-items: center;
+                font-size: 13px;
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                background-color: $commonColor;
+                display: inline-block;
+                line-height: 36px;
+                text-align: center;
+                margin-bottom: 10px;
+                transition: 0.5s;
+                box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+
+                &:hover{
+                    background-color: $primaryColor1;
+                    color: $commonColor;
+                }
+            }
+            &:hover{
+                .product_actionBtn{
+                    right: 17px;
+                    opacity: 1;
+                }
+            }
+        }
+
+        // Product Badge Ovarlay
+        .productBadge{
+            position: absolute;
+            top: 13px;
+            left: 24px;
+            background-color: $primaryColor1;
+            width: 52px;
+            height: 26px;
+            font-size: 16px;
+            line-height: 0;
+            color: $commonColor;
+            transform: rotate(-90deg);
+            z-index: 10001;
+            padding: 4px 0 0 0;
+            border-radius: 13px 0 0 13px;
+            text-align: center;
+        }
+
+    }
+    // Slider Arrow Style
+    .arrivals_slider{
+        .arrivalSliderArrow{
+            width: 30px;
+            height: 50px;
+            background-color: $primaryColor3;
+            opacity: 0.5;
+            color: $commonColor;
+            text-align: center;
+            line-height: 50px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10002;
+            cursor: pointer;
+            &.fa-chevron-left{
+                left: 12px;
+            }
+            &.fa-chevron-right{
+                right: 12px;
+            }
+        }
+    }
+}
+// New Arrivals Section End
+
+
+// Discount Style Start
+#discount{
+    background: url(../images/offer_banner_2_1.jpg);
+    padding: 103px 0;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 999;
+    overflow: hidden;
+    @include largeDevice(){
+        padding: 70px 0;
+    }
+
+    @include mediumDevice(){
+        padding: 60px 0;
+    }
+    @include smallDevice(){
+        padding: 50px 0;
+    }
+    .discountInfo{
+        color: $commonColor;
+        h3{
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 46px;
+            margin-bottom: 10px;
+            color: $commonColor;
+
+            @include largeDevice(){
+                
+            }
+            @include mediumDevice(){
+                font-size: 34px;
+            }
+            @include smallDevice(){
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+
+        
+        P{
+            font-family: $secondaryFont;
+            font-size: 16px;
+            line-height: 28px;
+            margin-bottom: 10px;
+
+            @include largeDevice(){
+                font-size: 14px;
+            }
+            @include mediumDevice(){
+                font-size: 12px;
+            }
+            @include smallDevice(){
+                font-size: 16px;
+            }
+        }
+        .btn1{
+            background-color: transparent;
+            border: 1px solid $commonColor;
+            margin-top: 30px;
+            transition: 0.5s;
+            &:hover{
+                background: $PrimayColor2;
+                border: 1px solid $PrimayColor2;
+                margin-top: 30px
+            }
+        }   
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(255,255,255,0.2);
+        z-index: 1000;
+        transform: rotate(30deg);
+        opacity: 1;
+        z-index: -1;
+    }
+    &:hover::after{
+        left: 0;
+        right: 0;
+        transform: rotate(140deg) scale(3);
+        transition: 1s;
+        opacity: 0;
+    }
+}
+// Discount Section End 
+
+
+// Best Seller Section Start
+#bestSeller{
+    padding: 100px 0 77px;
+    @include xSmallDeviec(){
+        padding: 50px 0 50px; 
+    }
+    @include smallDevice(){
+        padding: 70px 0 70px; 
+    }
+
+    .bestSellerItem{
+        position: relative;
+        overflow: hidden;
+        padding: 0 12px 28px;
+        border-top: none;
+        @include xSmallDeviec(){
+            padding: 0 12px 10px;
+        }
+        @include smallDevice(){
+            padding: 0 12px 5px;
+        }
+        .bestSelContent{
+            border: 1px solid #F1F3F4;
+        }
+        .bsProductThumb{
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            img:first-child{
+                width: 100%;
+            }
+            img:last-child{
+                position: absolute;
+                inset: 0;
+                z-index: 1000;
+                opacity: 0;
+                transition: 0.5s;
+                width: 100%;
+            }
+        }
+
+        &:hover{
+            .bsProductThumb img:last-child{
+                opacity: 1;
+                transform: scale(1.1);
+            }
+        }
+        
+        .bsProductInfo{
+            margin-top: 24px;
+            text-align: center;
+            padding: 25px 18px 27px 18px;
+            ins{
+                font-size: 16px;
+                color: #444444;
+                line-height: 26px;
+                text-decoration: none;
+            }
+            del{
+                font-size: 16px;
+                color: #BDBDBD;
+                line-height: 26px;
+                margin-left: 10px;
+            }
+            a{
+                font-size: 18px;
+                font-weight: 600;
+                color: $textColor;
+                line-height: 28px;
+                margin: 5px 0 11px;
+                display: inline-block;
+                transition: 0.5s;
+                &:hover{
+                    color: $PrimayColor2;
+                }
+                @include smallDevice(){
+                    font-size: 16px; 
+                }
+            }
+            .product_rating{
+                i{
+                    font-size: 12px;
+                    color: $primaryColor1;
+                }
+            }
+        }
+
+        .product_actionBtn{
+            position: absolute;
+            top: 40px;
+            right: -40px;
+            z-index: 10001;
+            transition: 0.5s;
+            opacity: 0; 
+            ul li a{
+                color: $primaryColor3;
+                align-items: center;
+                font-size: 13px;
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                background-color: $commonColor;
+                display: inline-block;
+                line-height: 36px;
+                text-align: center;
+                margin-bottom: 10px;
+                transition: 0.5s;
+                box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+                &:hover{
+                    background-color: $primaryColor1;
+                    color: $commonColor;
+                }
+            }
+        }
+        &:hover{
+            .product_actionBtn{
+                right: 17px; 
+                opacity: 1;
+            }
+        }
+        // Product Badge Ovarlay
+        .productBadge{
+            position: absolute;
+            top: 13px;
+            left: 24px;
+            background-color: $primaryColor1;
+            width: 52px;
+            height: 26px;
+            font-size: 16px;
+            line-height: 0;
+            color: $commonColor;
+            transform: rotate(-90deg);
+            z-index: 10001;
+            padding: 4px 0 0 0;
+            border-radius: 13px 0 0 13px;
+            text-align: center;
+        }
+    }
+
+    .bestSellerBtn{
+        margin-top: 16px;
+        a{
+            display: inline-block;
+            margin: 0;
+            transition: 0.5s;
+        }
+    }
+
+}
+// Best Seller Section End
+
+
+// Deals Of Day Section Start
+#dealDay{
+    .date{
+        margin-bottom: -35px;
+        .dealsContent{
+            width: 424px;
+            height: 70px;
+            background-color: $commonColor;
+            box-shadow: 0px 0px 10px rgba(21, 26, 50, 0.1);
+            border-radius: 40px;
+            padding: 7px 74px;
+            div span{
+                &:first-child{
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: $textColor;
+                    font-family: $primaryFont;
+                    line-height: 34px;
+                }
+                &:last-child{
+                    font-size: 16px;
+                    color: $paragraphColor;
+                    font-family: $primaryFont;
+                    line-height: 26px;
+                }
+            }
+            .dateColon{
+                font-size: 50px;
+                font-family: $primaryFont;
+                color: $PrimayColor2;
+                margin: 0 10px;
+            }
+        }
+    }
+
+    // Deals Slider
+    .dealSlider{
+        padding: 84px 40px 40px;
+        background-color: $commonColor;
+        box-shadow: 0px 0px 70px rgba(21, 26, 50, 0.08);
+
+        @include xSmallDeviec(){
+            padding: 70px 0px 35px;
+        }
+        @include smallDevice(){
+            padding: 70px 0px 35px;
+        }
+
+        .dealSliderItem{
+            color: $textColor;
+            overflow: hidden;
+
+            .dealSliderItemBox{
+                background-position: center;
+                background-size: cover;
+                padding: 35px 40px 50px;
+                background-repeat: no-repeat;
+                margin: 0 12px ;
+                position: relative;
+                @include xSmallDeviec(){
+                    padding: 50px 15px ;
+                    text-align: center;
+                }
+                @include smallDevice(){
+                    padding: 50px 15px;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    inset: 0;
+                    background-color: rgba(255, 255, 255, 0.3);
+                    transform: scaleX(0);
+                    opacity: 1;
+                    z-index: 1;
+                }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    inset: 0;
+                    background-color: rgba(255, 255, 255, 0.3);
+                    transform: scaleY(0);
+                    opacity: 1;
+                    z-index: 1;
+                }
+
+                &:hover{
+                    &::after{
+                        transform: scaleX(1);
+                        transition: all 900ms linear;
+                        opacity: 0;
+                    }
+                    &::before{
+                        transform: scaleY(1);
+                        transition: all 900ms linear;
+                        opacity: 0;
+                    }
+                }
+
+                .dealSliderContent{
+                    position: relative;
+                    z-index: 2;
+                    h6{
+                        font-size: 18px;
+                        line-height: 28px;
+                        font-weight: 600;
+                        @include xSmallDeviec(){
+                            
+                        }
+                        
+                    }
+                    h3{
+                        font-size: 36px;
+                        line-height: 46px;
+                        font-weight: 700;
+                        margin: 10px 0 16px;
+                        @include xSmallDeviec(){
+                            font-size: 22px;
+                            line-height: 33px;   
+                        }
+                        @include smallDevice(){
+                            font-size: 25px;
+                            line-height: 36px;
+                        }
+                    }
+                    p{
+                        font-family: $secondaryFont;
+                        font-size: 16px;
+                        line-height: 28px;
+                        color: $paragraphColor;
+                        width: 350px;
+                        @include xSmallDeviec(){
+                            font-size: 14px;
+                            width: 100%; 
+                        }
+                        @include smallDevice(){
+                            font-size: 15px;
+                            width: 100%;
+                        }
+                    }
+                    .dealslidePrice{
+                        margin: 19px 0 30px;
+                        h5{
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            color: $textColor;  
+                            @include xSmallDeviec(){
+                                font-size: 16px;
+                            }
+                            @include smallDevice(){
+                                font-size: 18px;
+                            }
+                            ins{
+                                text-decoration: none;
+                                margin-right: 13px;
+                            }
+                            del{
+                                text-decoration: none;
+                                color: $paragraphColor;
+                            }
+                        }
+                    }
+                    .btn1{
+                        background-color: $primaryColor3;
+                        display: inline-block;
+                    }
+                }
+            }
+
+            .dealsSliderDots{
+                display: flex;
+                justify-content: center;
+                margin-top: 40px;
+                li{
+                    margin-right: 5px;
+                    line-height: 0;
+                    button{
+                        font-size: 0;
+                        width: 10px;
+                        height: 6px;
+                        border-radius: 5px;
+                        background-color: $grayColor;
+                        border: none;
+                        transition: 0.5s;
+                    }
+                    &.slick-active button{
+                        width: 26px;
+                        background-color: $primaryColor3;
+                    }
+                }
+            }
+        }
+    }
+}
+// Deals of Day Section End
+
+
+// Spacial Offer Section Start
+#spacialOffer{
+    margin: 123px 0 0;
+    padding: 103px 0;
+    background-color: #F1F3F4;
+    position: relative;
+    @include xSmallDeviec(){
+        margin: 36px 0 0;
+    }
+    @include smallDevice(){
+        margin: 70px 0 0;
+    }
+
+    @include customResponsive(0px, 1200px){
+        padding: 0px;
+    }
+
+    .spacialOfferInfo{
+        
+        h6{
+            font-size: 16px;
+            line-height: 26px;
+            color: $paragraphColor;
+        }
+        h3{
+            font-size: 36px;
+            line-height: 46px;
+            font-weight: 700;
+            color: $textColor;
+            margin: 10px 0 16px;
+            @include smallDevice(){
+                font-size: 26px;
+            }
+            @include xSmallDeviec(){
+                font-size: 27px;
+            }
+        }
+        p{
+            font-size: 16px;
+            line-height: 28px;
+            color: $paragraphColor;
+            margin: 0px 0 30px;
+        }
+        @include customResponsive(0px,1200px){
+            padding: 50px 0;
+        }
+
+    }
+
+    .spacialOfferVideo{
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        right: 0;
+        top: 0;
+        @include customResponsive(0px,1200px){
+            position: relative;
+            width: 100%;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scaleX(0);
+            opacity: 1;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scaleY(0);
+            opacity: 1;
+            z-index: 1;
+            scroll-snap-stop: 0px;
+        }
+        &:hover{
+            &::after{
+                transform: scaleX(1);
+                transition: all 900ms linear;
+                opacity: 0;
+            }
+            &::before{
+                transform: scaleY(1);
+                transition: all 900ms linear;
+                opacity: 0;
+            }
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            position: relative;
+        }
+
+        .videoPlayBtn{
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: $commonColor;
+            color: $primaryColor1;
+            text-align: center;
+            line-height: 60px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: inline-block;
+            z-index: 1;
+            font-size: 18px;
+            transition: 0.5s;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: $commonColor;
+                border-radius: 50%;
+                inset: 0;
+                z-index: -1;
+                transition: 2s;
+                animation: spacialVideoBtnAn 2s linear infinite;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: $commonColor;
+                border-radius: 50%;
+                inset: 0;
+                z-index: -1;
+                transition: 2s;
+                animation: spacialVideoBtnAn 2s linear infinite;
+                animation-delay: 3s;
+            }
+            &:hover{
+                color: $commonColor;
+                background: $primaryColor1;
+                &::after,&::before{
+                    background: $primaryColor1;
+                }
+            }
+            @keyframes spacialVideoBtnAn{
+                0%{
+                    transform: scale(1);
+                    opacity: 0.6;
+                }
+                20%{
+                    transform: scale(1.2);
+                    opacity: 0.5;
+                }
+                40%{
+                    transform: scale(1.3);
+                    opacity: 0.4;
+                }
+                60%{
+                    transform: scale(1.4);
+                    opacity: 0.3;
+                }
+                80%{
+                    transform: scale(1.5);
+                    opacity: 0.2;
+                }
+                100%{
+                    transform: scale(1.7);
+                    opacity: 0;
+                }
+                
+            }
+        }
+    }
+    
+}
+// Spacial Offer Section End
+
+
+// Blog Section Start
+#blog{
+    padding: 100px 0;
+    @include xSmallDeviec(){
+        padding: 50px 0 50px;
+    }
+    @include smallDevice(){
+        padding: 70px 0 60px;
+    }
+    .blogSlide{
+        .blogSlideItem{
+            padding: 20px 0;
+            background-color: $commonColor;
+            box-shadow: 0px 5px 30px rgba(17, 22, 30, 0.08);
+            margin: 10px 12px 40px;
+            width: 312px;
+            .blogSlideThum{
+                overflow: hidden;
+                padding: 0px 35px 20px;
+                @include xSmallDeviec(){
+                    padding: 0px 12px 20px;
+                }
+                .blogItemImg{
+                    position: relative;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        inset: 0;
+                        background-color: rgba(255, 255, 255, 0.3);
+                        transform: scaleX(0);
+                        opacity: 1;
+                    }
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        inset: 0;
+                        background-color: rgba(255, 255, 255, 0.3);
+                        transform: scaleY(0);
+                        opacity: 1;
+                    }
+                    &:hover{
+                        &::after{
+                            transform: scaleX(1);
+                            transition: all 900ms linear;
+                            opacity: 0;
+                        }
+                        &::before{
+                            transform: scaleY(1);
+                            transition: all 900ms linear;
+                            opacity: 0;
+                        }
+                    }
+                }
+                img{
+                    width: 100%;
+                }
+            }
+
+            .blogSlideInfo{
+                padding: 0 35px;
+                .blogSlideItemTitle{
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    color: $textColor;
+                    transition: 0.5s;
+                    &:hover{
+                        color: $PrimayColor2;
+                    }
+                    @include mediumDevice(){
+                        font-size: 18px;
+                    }
+                }
+
+                p{
+                    font-size: 16px;
+                    font-family: $secondaryFont;
+                    line-height: 28px;
+                    color: $paragraphColor;
+                    padding: 2px 0 16px;
+                    @include mediumDevice(){
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .blogSlideFooter{
+                a{
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 28px;
+                    color: $paragraphColor;
+                    transition: 0.5s; 
+                    &:last-child{
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: $paragraphColor;
+                    }
+                    &:hover{
+                        color: $PrimayColor2;
+                    }
+                }
+            }
+        }
+
+        .blogSliderDots{
+            display: flex;
+            justify-content: center;
+            li{
+                margin-right: 5px;
+                line-height: 0;
+                button{
+                    font-size: 0;
+                    width: 10px;
+                    height: 6px;
+                    border-radius: 5px;
+                    background-color: $grayColor;
+                    border: none;
+                    transition: 0.5s;
+                }
+
+                &.slick-active{
+                    button{
+                        width: 26px;
+                        background: $primaryColor3;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+// Blog Section End
+
+// Pomotion Section Start
+#promotion{
+    margin-bottom: -80px;
+    position: relative;
+    z-index: 10001;
+    @include xSmallDeviec(){
+        margin: 0px 10px -80px;
+    }
+
+
+    .promotionRow{
+        padding: 30px 0;
+        box-shadow: 0px 0px 50px rgba(21, 26, 50, 0.1);
+        background-color: $commonColor;
+    }
+    .promotionContent{
+        padding: 15px 25px;
+        @include mediumDevice(){
+            width:100%;
+        }
+        @include xSmallDeviec{
+            width: 280px;
+            
+        }
+        
+        .promotionIcon{
+            margin-right: 10px;
+            width: 70px;
+            height: 70px;
+            background-color: $primaryColor1;
+            color: $commonColor;
+            border-radius: 50%;
+            overflow: hidden;
+            line-height: 70px;
+            text-align: center;
+
+            @include mediumDevice(){
+                width: 65px;
+                height: 66px;
+                border-radius: 50%;
+                line-height: 66px;
+            }
+            @include smallDevice{
+                width: 52px;
+                height: 52px;
+                line-height: 52px;
+                
+            }
+
+            @include xSmallDeviec{
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                img{
+                    width: 60%; 
+                }
+                
+            }
+            
+        }
+        .promotionInfo{
+            h5{
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 30px;
+                color: $textColor; 
+                @include mediumDevice(){
+                font-size: 18px;
+                }
+
+                @include smallDevice{
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+                @include xSmallDeviec{
+                    font-size: 15px;
+                    line-height: 22px;
+                }
+            }
+            p{
+                font-size: 16px;
+                font-family: $secondaryFont;
+                line-height: 28px;
+                color: $textColor;
+                @include mediumDevice(){
+                font-size: 14px;
+                }
+
+                @include smallDevice{
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+            }
+            span{
+                color: $primaryColor1;
+            }
+        }
+    }
+}
+// Pomotion Section End
+
+// Footer Section Start
+/* Footer Section Start */
+#footer{
+    padding-top: 150px;
+    background: url(../images/footer_bg_1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 200000;
+    z-index: 1000;
+    &::after{
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: #272931;
+        opacity: 0.9;
+        z-index: -1;
+    }
+    .footerTop{
+        padding: 0 0 70px;
+        border-bottom: 1px solid #E0E0E0;
+        @include largeDevice(){
+            padding: 0 0 50px;
+        }
+        .footerTopItem{
+            .footerTopSocial{
+                li{
+                    a{
+                        width: 40px;
+                        height: 40px;
+                        background: $commonColor;
+                        color: $paragraphColor;
+                        margin: 0 5px;
+                        text-align: center;
+                        line-height: 40px;
+                        display: inline-block;
+                        transition: 0.5s;
+                    }
+                    &:hover{
+                        a{
+                            background: $primaryColor1;
+                            color: $commonColor;
+                        }
+                    }
+
+                    
+                }
+            }
+
+            &:last-child{
+                text-align: right;
+            }
+        }
+    }
+    .footerBottom{
+        padding: 70px 0 0;
+        color: $commonColor;
+        .footerBottomItem{
+            &:nth-child(3){
+                margin-right: 0px;
+            }
+            &:nth-child(4){
+                margin-right: 0px;
+            }
+            .fotBoTitle{
+                padding-bottom: 22px;
+                h4{
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 34px;
+                }
+            }
+            .foBoInfo{
+                margin-bottom: 5px;
+                .foBoInfoList{
+                    li{
+                        font-family: $secondaryFont;
+                        a{
+                            font-size: 16px;
+                            font-weight: 28px;
+                            font-family: $secondaryFont;
+                            color: $commonColor; 
+                            transition: 0.5s; 
+                        }
+                        &:hover{
+                            a{
+                                color: $primaryColor1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .foBoInfo4{
+                a{
+                    color: $primaryColor1;
+                    font-size: 16px;
+                    margin-right: 10px;
+                    display: inline-block;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 28px;
+                    font-family: $secondaryFont;
+                }
+                i{
+                    font-style: 16px;
+                    line-height: 28px;
+                }
+                .foPhone{
+                    color: $commonColor;
+                }
+
+                .foemail{
+                    display: block;
+                    color: $commonColor;
+                }
+            }
+
+            .foBoInfo5{
+                p{
+                    font-size: 16px;
+                    font-family: $secondaryFont;
+                    line-height: 28px;
+                    margin-bottom: 23px;
+                }
+            }
+            .footBoInput{
+                width: 312px;
+                height: 50px;
+                position: relative;
+                input{
+                    width: 100%;
+                    height: 100%;
+                    padding: 11px 10px;
+                    font-family: $secondaryFont;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    color: #8F8F8F;
+                }
+                .footSubBtn{
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 114px;
+                    background: $primaryColor1;
+                    border: none;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    color: $commonColor;
+                }
+            }
+        }
+    }
+
+    // Footer Copyright
+    .footerCopyright{
+        background: rgba(255, 255, 255, 0.1);
+        padding: 21px 0;
+        text-align: center;
+        margin-top: 70px;
+        color: $commonColor;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: $secondaryFont;
+        .copyrightText{
+            a{
+                color: $PrimayColor2;
+            }
+        }
+    }
+}
+// Footer Section End
+ 
+
+
+
+
+
+
+
+
+
+
+

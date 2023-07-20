@@ -1,0 +1,129 @@
+body{
+    font-family: $primaryFont;
+}
+h1,h2,h3,h4,h5,h6,
+a,
+p,
+li,
+ol,
+ul,
+span,
+small{
+    margin: 0;
+    padding: 0;
+}
+a,a:hover{
+    text-decoration: none;
+    margin: 0 0;
+}
+ol,ul{
+    list-style-type: none;
+}
+.text-justify{
+    text-align: justify;
+}
+.btn1, .btnH{
+    background-color: $primaryColor1;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 13px 40px;
+    line-height: 28px;
+    color: $commonColor;
+    border: none;
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    overflow: hidden;
+
+    @include largeDevice(){
+        font-size: 12px;
+        padding: 9px 36px;
+    }
+
+}
+
+.btnH{
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        inset: 0;
+        height: 100%;
+        background: $primaryColor3;
+        transition: 0.5s;
+        z-index: -1;
+    };
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0px;
+        height: 100%;
+        background: $blackColor;
+        transition: 0.5s;
+        z-index: -1;
+    }
+    &:hover{
+        background-color: transparent;
+        &::after{
+            width: 50%;
+        };
+        &::before{
+            width: 50%;
+        }
+    }
+
+}
+
+.btnH2{
+    &::after{
+        content: '';
+        position: absolute;
+        width: 0%;
+        inset: 0;
+        height: 100%;
+        background: $PrimayColor2;
+        transition: 0.5s;
+        z-index: -1;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0px;
+        height: 100%;
+        background: $PrimayColor2;
+        transition: 0.5s;
+        z-index: -1;
+    }
+    &:hover{
+        background-color: transparent;
+        &::after{
+            width: 50%;
+        };
+        &::before{
+            width: 50%;
+        }
+    }
+}
+
+.secTitle h3{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+    color: $blackColor;
+    text-align: center;
+    margin-bottom: 36px;
+    @include xSmallDeviec(){
+        font-size: 26px;
+        line-height: 38px;
+    }
+    @include smallDevice(){
+        font-size: 28px;
+        line-height: 40px;
+    }
+}

@@ -1,0 +1,193 @@
+#navbar{
+    padding: 16px;
+    .nav_list{
+        .nav-item{
+            &:hover a i{
+                color: $PrimayColor2;
+            }
+            margin-left: 22px;
+            a{
+                font-size: 16px;
+                color: $textColor;
+                text-transform: capitalize;
+                transition: 0.5s;
+                position: relative;
+                padding: 20px 0;
+                &:hover{
+                    color: $PrimayColor2;
+                }
+            };
+
+            i{
+                font-size: 16px;
+                color: $textColor;
+                transition: 0.5s;
+                display: inline-block;
+                position: relative;
+                top: 3px;
+            }
+            
+            /* Navbar Common Dropdown Start */
+            .dropdown{
+                background: $commonColor;
+                padding: 15px 10px 15px 60px;
+                border-bottom: 3px solid $primaryColor1;
+                margin-right: 20px;
+                position: absolute;
+                top: 100%;
+                transform: scaleY(0) translateX(-25%);
+                transform-origin: bottom;
+                z-index: 200000;
+                transition: 0.5s;
+                li{
+                    padding: 5px 0;
+                a{
+                    position: relative;
+                    margin-right: 20px;
+                    padding: 0 ;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        top: 3px;
+                        left: -25px;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background-color: $primaryColor1;
+                        z-index: 1;
+                    }
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top: 0px;
+                        left: -28px;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: rgba(0, 0, 0, 0.08);
+                        z-index: -1;
+                    }
+                };
+            }
+            }
+            /* Navbar Common Dropdown End */
+
+            &:hover .dropdown{
+            transform: scaleY(1) translateX(-25%);
+            }
+
+            .dropdownPages{
+                position: absolute;
+                top: 100%;
+                display:flex;
+                justify-content:space-between;
+                text-align:left;
+                width:100%;
+                padding:20px 15px 23px 15px;
+                z-index: 10000000;
+                background: $commonColor;
+                border-bottom: 3px solid $PrimayColor2;
+                transform: scaleY(0) translateX(-50%);
+                transform-origin: bottom;
+                transition: 0.5s;
+                li{
+                padding: 0 15px;
+                width: 100%;
+                display: block;
+                .pageDropTitle{
+                    font-size: 16px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    font-family: $secondaryFont;
+                    line-height: 28px;
+                    color: $blackColor;
+                    display: inline-block;
+                    padding: 0 0 30px;
+                }
+                ul li{
+                    padding: 0 0 5px;
+                    width: 100%;
+                    a{
+                        font-size: 16px;
+                        font-family: $secondaryFont;
+                        font-weight: 400;
+                        color: $blackColor;
+                        padding: 0;
+                        transition: 0.5s;
+                        &:hover{
+                            color: $PrimayColor2;
+                        }
+                    }
+                }
+            }
+            }
+
+            
+        /* Navbar Pages Dropdown End */
+
+        &:last-child{
+            position: static;
+        }
+        }
+
+        .navPage:hover .dropdownPages{
+            transform: scaleY(1) translateX(-50%);
+        }
+
+        
+    };
+
+    .navResponBtn{
+        background-color: $PrimayColor2;
+        width: 50px;
+        height: 50px;
+        border: none;
+        padding: 0;
+        color: $commonColor;
+        font-size: 25px;
+        font-weight: 700;
+        border-radius: 0;
+
+    };
+    
+    .nav_icon{
+        .shopBag{
+            position: relative;
+            border: none;
+            background-color: transparent;
+            margin-left: 20px;
+            transition: 0.5s;
+            &:hover{
+                color: $primaryColor3; 
+            }
+        }
+        .shopBadge{
+            position: absolute;
+            top: -10px;
+            left: 7px;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            font-size: 10px;
+            line-height: 13px;
+            text-align: center;
+            background-color: $primaryColor1;
+            color: $commonColor;
+            z-index: 1;
+        }
+
+        ul li a{
+            font-size: 16px;
+            color: $primaryColor3;
+            margin-left: 20px;
+            transition: 0.35s;
+            &:hover{
+                color: $primaryColor1;
+            }
+        }
+    }
+
+}
+
+
+

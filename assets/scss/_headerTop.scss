@@ -1,0 +1,61 @@
+$primaryColor1: #FF6F61;
+$PrimayColor2: #FF5645;
+$primaryColor3: #151A32;
+$lightBgColor: #F1F1F1;
+$bgColor: #F1F3F4;
+$blackColor: #000000;
+$aseColor: #A6AAB7;
+$commonColor: #FFFFFF;
+$textColor: #11161E;
+$paragraphColor: #444444;
+$grayColor: #828282;
+$primaryFont: 'Josefin Sans', sans-serif;
+$secondaryFont: 'Roboto', sans-serif;
+$secondaryFont: 'Roboto', sans-serif;
+$shadowOne: 0px 3px 10px rgba(0, 0, 0, 0.08);
+$shadowTwo: 0px 0px 50px rgba(21, 26, 50, 0.1);
+$shadowThree: 0px 5px 30px rgba(17, 22, 30, 0.08);
+
+#headerTop{
+    background: $primaryColor3;
+    padding: 11px 0;
+    color: $commonColor;
+    font-size: 16px;
+    font-family: $secondaryFont;
+
+    .headerTopleft span{
+        font-family: $primaryFont;
+        color: $PrimayColor2;
+    }
+
+    .headerTopright{
+        .headerTopRightContent ul li{
+            padding: 0 20px;
+            border-right: 1px solid #8C8C8C;
+            &:nth-child(4){
+                border: none;
+                padding-right: 0px;
+            };
+
+            @include customResponsive(0px,1200px){
+                &:nth-child(3){
+                    border: none;
+                    padding-right: 0px; 
+                };
+            }
+        };
+        
+        
+        a{
+            color: $commonColor;
+            transition: 0.5s;
+            &:hover{
+                color: $PrimayColor2;
+            }
+        }
+        .hTSocialIcon a{
+            margin-left: 10px;
+        }
+    }
+
+}

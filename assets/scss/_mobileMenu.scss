@@ -1,0 +1,107 @@
+#mobileMenu{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0,0.7);
+    z-index: 1000002;
+    transition: 0.3s;
+    transform: scaleX(0);
+    transform-origin: left;
+    .menuSide{
+        width: 310px;
+        height: 100vh;
+        background: $commonColor;
+        position: relative;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: 1s;
+        .mobileMenuLogo{
+            padding: 50px 0;
+            text-align: center;
+            background: rgba(28,185,200,0.1);
+        }
+ 
+        .MobileMenuContent{
+            padding: 40px 30px;
+            .mobileLink{
+                padding-bottom: 20px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.154);
+                ul{
+                    li{
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.154);
+                        a{
+                            font-family: $secondaryFont;
+                            color: $textColor;
+                            font-size: 16px;
+                            padding: 12px 0;
+                            display: inline-block;
+                            transition: 0.5s;
+                            position: relative;
+                            width: 100%;
+                             
+                            .mobileMenuArrow{
+                                border: 0;
+                                outline: 0;
+                                background: transparent;
+                                position: absolute;
+                                top: 5px;
+                                right: 0;
+                                font-size: 12px;
+                                transform: translateY(50%);
+                            }
+                        }
+
+                        .MobileDropdown{
+                            li{
+                                a{
+                                    padding: 12px 0 12px 10px;
+                                }
+                            }
+                        }
+
+
+                    }
+                }
+            }
+
+            .mobileBottumMenu{
+                padding: 30px 0;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.154);
+                ul{
+                    li{
+                        a{
+                            font-family: $secondaryFont;
+                            color: $textColor;
+                            font-size: 16px;
+                            padding: 12px 0;
+                            display: inline-block;
+                            transition: 0.5s;
+                            i{
+                                margin-right: 10px;
+                            }
+                            &:hover{
+                                color: $primaryColor1;
+                            }
+                            span{
+                                color: $primaryColor1;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .mobileMenuClose{
+            position: absolute;
+            top: 18px;
+            right: 26px;
+            button{
+                border: none;
+                background: transparent;
+                font-size: 22px;
+                color: $blackColor;
+            }
+        }
+    }
+    
+} 

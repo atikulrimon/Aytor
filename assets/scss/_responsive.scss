@@ -1,0 +1,38 @@
+@mixin xSmallDeviec(){
+    @media (width < 576px) {
+        @content
+    }
+};
+
+
+@mixin smallDevice(){
+    @media (576px <= width < 768px) {
+        @content
+    }
+};
+
+
+@mixin mediumDevice(){
+    @media (768px <= width < 992px) {
+        @content
+    }
+};
+
+
+@mixin largeDevice(){
+    @media (992px <= width < 1200px) {
+        @content
+    }
+};
+@mixin extralargeDevice(){
+    @media (1200px <= width < 1400px) {
+        @content
+    }
+}; 
+
+
+@mixin customResponsive ($min-width , $max-width){
+    @media ($min-width <= width < $max-width) {
+        @content
+    }
+}

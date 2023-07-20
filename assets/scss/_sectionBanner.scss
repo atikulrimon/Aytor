@@ -1,0 +1,46 @@
+#sectionBanner{
+    height: 400px;
+    width: 100%;
+    background-position: center !important;
+    background-size: cover !important;
+    position: relative;
+    margin-bottom: 100px;
+    .content{
+        position: relative;
+        z-index: 100;
+        h2{
+            z-index: 20000;
+            color: $commonColor;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 58px;
+        }
+
+        .sectionSelection{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            font-family: $secondaryFont;
+            color: $commonColor;
+            a{
+                color: $commonColor;
+                padding-right: 10px;
+                transition: 0.5s;
+                &:hover{
+                    color: $primaryColor1;
+                }
+            }
+            h6{
+                padding-left: 10px;
+            }
+        }
+    }
+
+    .ovarley{
+        position: absolute;
+        inset: 0;
+        background-color: #11161E;
+        opacity: 0.7;
+        z-index: 99;
+    }
+}

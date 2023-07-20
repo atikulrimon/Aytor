@@ -1,0 +1,287 @@
+//Product Details Start
+#shopDetailsArea{
+    .shopDetailsThum{
+        padding-bottom: 20px;
+    }
+
+    .shopDetailsThumNav{
+        .shopDetailsThumNavItem{
+            cursor: pointer;
+            text-align: center;
+            height: 120px;
+            width: 120px;
+            padding: 2px;
+            transition: .5s;
+            &.slick-center{
+                img{
+                    box-shadow: 0px 0px 25px rgba(21,26,50,0.12);
+                }
+            }
+            img{
+                margin: 0 6px;
+            }
+        }
+    }
+
+
+
+    .productInfo{
+        h3{
+            font-size: 36px;
+            line-height: 46px;
+            color: $textColor;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        .customerRating{
+            p{
+                font-size: 17px;
+                line-height: 26px;
+                color: $paragraphColor;
+            }
+            .ratingStar{
+                color: $primaryColor1;
+                font-size: 16px;
+                padding: 0 10px;
+                position: relative;
+                li{
+                    padding: 1px;
+                }
+                
+            }
+            a{
+                font-size: 17px;
+                line-height: 26px;
+                color: $paragraphColor;
+                transition: 0.5s;
+                padding-left: 10px;
+                border-left: 2px solid $paragraphColor;
+                &:hover{
+                    border-left: 2px solid $primaryColor1;
+                    color: $primaryColor1;
+                }
+            }
+        }
+
+        .productPrice{
+            margin: 15px 0 20px;
+            h5{
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 30px;
+                color: $textColor;
+                del{
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: $paragraphColor;
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        .productDescription{
+            font-size: 16px;
+            line-height: 28px;
+            color: $paragraphColor;
+            font-family: $secondaryFont;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #E0E0E0;
+
+        }
+
+        .productVariations{
+
+            margin-top: 42px;
+
+            tr{
+                font-family: $secondaryFont;
+
+                .productVarTitle{
+                    font-size: 18px;
+                    line-height: 28px;
+                    font-weight: 600;
+                    color: $textColor;
+                    width: 15%;
+                    padding: 12px 0;
+                }
+
+                .productVarSelect{
+                    width: 100%;
+                    select{
+                        width: 100%;
+                        padding: 7px 20px;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: $paragraphColor;
+                        border: 1px solid #E0E0E0;
+                        background: $commonColor;
+                        
+                    }
+                }
+            }
+        }
+
+        .productQuality{
+            padding: 40px 0 45px;
+            border-bottom: 1px solid #E0E0E0;
+            h4{
+                font-size: 18px;
+                line-height: 28px;
+                color: $textColor;
+                margin-bottom: 15px;
+                
+            }
+
+            .quantityUpdown{
+                button{
+                    font-size: 16px;
+                    color: $paragraphColor;
+                    background: transparent;
+                    border: 1px solid #E0E0E0;
+                    display: inline-block;
+                    width: 50px;
+                    height: 50px;
+                    text-align: center;
+                    line-height: 50px;
+                }
+                input{
+                    width: 50px;
+                    height: 50px;
+                    border: 1px solid #E0E0E0;
+                    text-align: center;
+                    line-height: 50px;
+                    font-size: 16px;
+                    font-weight: 400; 
+
+                }
+            }
+
+            .addcartBtn{
+                margin: 0 10px;
+                height: 50px;
+            }
+
+            .quantityAncbtn{
+                width: 50px;
+                height: 50px;
+                background: #000;
+                line-height: 50px;
+                text-align: center;
+                display: inline-block;
+                font-size: 18px;
+                color: $commonColor;
+                font-family: $secondaryFont;
+                font-weight: 400;
+                transition: 0.5s;
+                &:hover{
+                    background: $primaryColor1;
+                }
+            }
+        }
+
+        .productInfoButtom{
+            padding-top: 35px;
+
+            .productDetails{
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 28px;
+                color: $textColor;
+                h6{
+                    margin-bottom: 3px;
+                }
+                span{
+                    color: $paragraphColor;
+
+                }
+                a{
+                    color: $paragraphColor;
+                    transition: 0.5s;
+                    &:hover{
+                        color: $primaryColor1;
+                    }
+                }
+            }
+
+            .socialLink{
+                ul{
+                    li{
+                        margin-right: 10px;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                        a{
+                            font-size: 18px;
+                            color: $paragraphColor;
+                            transition: 0.5s;
+                            &:hover{
+                                color: $primaryColor1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Product Details End
+
+// Description Review Information Start
+#desReviewInfo{
+    padding: 100px;
+    
+    .desReviewBtn{
+        display: flex;
+        margin-bottom: 40px;
+        ul{
+            li{
+                button{
+                    width: 300px;
+                    height: 60px;
+                    background: #000;
+                    color: $commonColor;
+                    border-radius: 0;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 30px;
+                    &.active{
+                        background: $primaryColor1;
+                    }
+                }
+            }
+        }
+    }
+    .desReviewButtomSec{
+        .tab-content{
+            .desRevieButtContent1{
+                font-family: $secondaryFont;
+                font-size: 15px;
+                line-height: 28px;
+            }
+
+
+
+            .desRevieButtContent3{
+                .additionalInfo{
+                    table{
+                        tr{
+                            td{
+                                border: 1px solid $aseColor;
+                                padding: 9px 12px;
+                                font-family: $secondaryFont;
+                                font-size: 16px;
+                                line-height: 28px;
+                                &.additionalTableTitle{
+                                    font-weight: 700;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

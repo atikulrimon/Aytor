@@ -1,0 +1,173 @@
+/* Product Cart Section Start */
+#productCart{
+    margin-bottom: 40px;
+    .productForm{
+            
+        .productTable{
+            border: 1px solid #E0E0E0;
+            .productHeadline{
+                background-color: #F1F3F4;
+                border-bottom: 3px solid $primaryColor1;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 28px;
+                color: $textColor;
+                font-family: $primaryFont;
+                .productTitle{
+                    td{
+                        padding: 15px 0;
+                    }
+                }
+            }
+        }
+
+        .productTableBody{
+            font-family: $secondaryFont;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            color: $paragraphColor;
+            tr{
+                td{
+                    border: 1px solid #E0E0E0;
+                    padding: 30px 45px;
+                    a{
+                        color: $paragraphColor;
+                    }
+
+                    .qualityCart{
+                        .qualityBtn{
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 3px;
+                            background: $commonColor;
+                            color: $paragraphColor;
+                            border: 1px solid #4444445f;
+                            font-size: 18px;
+                            line-height: 28px;
+                            text-align: center;
+                            transition: 0.5s;
+                            &:hover{
+                                color: $primaryColor1;
+                                border-color: $primaryColor1;
+                            }
+                        }
+
+                        .qualityInput{
+                            width: 70px;
+                            height: 30px;
+                            border-radius: 3px;
+                            background: $commonColor;
+                            color: $paragraphColor;
+                            border: 1px solid #4444445f;
+                            font-family: $secondaryFont;
+                            font-size: 14px;
+                            line-height: 28px;
+                            text-align: center;
+                            padding: 5px 5px;
+                            margin: 0 5px;
+                        }
+                    }
+
+                    .cartDelete{
+                        color: $primaryColor1;
+                    }
+                }
+            }
+
+            .cartTableFooter{
+                td{
+                    padding: 15px;
+                }
+                .couponCodeInput{
+                    input{
+                        width: 320px;
+                        height: 50px;
+                        border: 1px solid #E0E0E0;
+                        color: $paragraphColor;
+                        padding: 11px 20px 11px 15px;
+                    }
+                    button{
+                        width: 113px;
+                        height: 50px;
+                        border: none;
+                        color: $commonColor;
+                        padding: 0px;
+                        background-color: $primaryColor1;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 28px;
+                        margin-left: 10px;
+                    }
+                }
+
+                .cartShopBtn{
+                    button{
+                        border: none;
+                        color: $commonColor;
+                        padding: 11px 22px;
+                        background-color: $primaryColor1;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 28px;
+                    }
+                    a{
+                        display: inline-block;
+                        border: none;
+                        color: $commonColor;
+                        padding: 11px 22px;
+                        background-color: $primaryColor1;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 28px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+/* Product Cart Section End */
+
+/* Cart Total Section Start */
+#cartTotal{
+    .cartTotalContent{
+        h4{
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 34px;
+            color: $textColor;
+            margin-bottom: 20px;
+        }
+        .totalTable{
+            tr{
+                border: 1px solid #E0E0E0;
+                td{
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    color: $paragraphColor;
+                }
+                .totalHead{
+                    background: #F1F3F4;
+                    width: 224px;
+                    padding: 17PX 20px;
+                }
+                .totalAmmount{
+                    padding: 17px 30px;
+                }
+
+                .totalprice{
+                    color: $PrimayColor2;
+                }
+            }
+        }
+
+        .proceedToCheckoutBtn{
+            margin-top: 30px;
+        }
+    }
+}
+
+/* Cart Total Section End */

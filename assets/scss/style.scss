@@ -1,0 +1,166 @@
+/* 
+Theme Name: Aytor
+Theme Author: 
+version: 1.0.0
+
+
+Table of Content
+=====================
+1.Home Page:
+    1.1) Top Bar
+    1.2) Nav Bar
+    1.3) Banner Part
+    1.4) Features
+    1.5) New Arrivals
+    1.6) Discount
+    1.7) Best Seller
+    1.8) Deals Of The Days
+    1.9) Special offer
+    1.10) Blog
+    1.11) Promotion
+    1.12) Footer
+
+2.About Page:
+    2.1) Top Header
+    2.2) Menu Bar
+    2.3) Breadcumb
+    2.4) About shop
+    2.5) Archivement
+    2.6) Our Story
+    2.7) Feature
+    2.8) Team
+    2.9) Testimonials
+    2.10) Instagram
+    2.11) Footer
+
+
+3.ShopGrid Page:
+    3.1) Top Header
+    3.2) Menu Bar
+    3.3) Breadcumb
+    3.4) Products
+    3.5) Footer
+
+4.ShopDetailsStyleOne Page:
+    4.1) Top Header
+    4.2) Menu Bar
+    4.3) Breadcumb
+    4.4) Products Details
+    4.5) Description & Review & Information
+    4.6) Releted Products
+    4.7) Footer
+
+5.ShopProductCompare Page:
+    5.1) Top Header
+    5.2) Menu Bar
+    5.3) Breadcumb
+    5.4) Compare Products
+    5.5) Footer
+
+6.Shop_Cart Pages:
+    6.1) Top Header
+    6.2) Menu Bar
+    6.3) Breadcumb
+    6.4) Product Cart
+    6.5) Cart Total
+    6.6) Footer
+
+
+7.Shop_Checkout Pages:
+    7.1) Top Header
+    7.2) Menu Bar
+    7.3) Breadcumb
+    7.4) Coupon
+    7.5) Billing Information
+    7.6) Order notes
+    7.7) Your Order
+    7.8) Place Order
+    7.9) Footer
+
+
+8.Shop_Wishlist Pages:
+    8.1) Top Header
+    8.2) Menu Bar
+    8.3) Breadcumb
+    8.4) Wishlist
+    8.5) Footer
+
+
+9.Blog_Classic Page:
+    9.1) Top Header
+    9.2) Menu Bar
+    9.3) Breadcumb
+    9.4) Blog
+    9.5) Sidebar
+    9.6) Footer
+
+10.Blog_Details Page:
+    10.1) Top Header
+    10.2) Menu Bar
+    10.3) Breadcumb
+    10.4) Blog
+    10.5) Sidebar
+    10.6) Footer
+
+
+11.Contact Page:
+    11.1) Top Header
+    11.2) Menu Bar
+    11.3) Breadcumb
+    11.4) Contact Option
+    11.5) Get In Touch
+    11.6) Footer
+
+12.404 Error Page:
+    12.1) Top Header
+    12.2) Menu Bar
+    12.3) 404
+    12.4) Footer
+
+13.Pop Up Page:
+    13.1) Popup
+    13.2) Top Header
+    13.3) Menu
+    13.4) Banner
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Roboto&display=swap');
+@import "responsive";
+@import "headerTop";
+@import "reset";
+@import "common";
+@import "nav";
+@import "index";
+@import "newsletter";
+@import "preloader"; 
+@import "backToTop";
+@import "mobileMenu";
+@import "shopingCartSidemenu";
+@import "about";
+@import "sectionBanner";
+@import "footer";
+@import "cart";
+@import "checkout";
+@import "shop";
+@import "shopDetails";
+@import "contact";
+@import "compare";
+@import "error";
+
+
+$primaryColor1: #FF6F61;
+$PrimayColor2: #FF5645;
+$primaryColor3: #151A32;
+$lightBgColor: #F1F1F1;
+$bgColor: #F1F3F4;
+$blackColor: #000000;
+$aseColor: #A6AAB7;
+$commonColor: #FFFFFF;
+$textColor: #11161E;
+$paragraphColor: #444444;
+$grayColor: #828282;
+$primaryFont: 'Josefin Sans', sans-serif;
+$secondaryFont: 'Roboto', sans-serif;
+$shadowOne: 0px 3px 10px rgba(0, 0, 0, 0.08);
+$shadowTwo: 0px 0px 50px rgba(21, 26, 50, 0.1);
+$shadowThree: 0px 5px 30px rgba(17, 22, 30, 0.08);

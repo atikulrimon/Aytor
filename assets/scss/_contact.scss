@@ -1,0 +1,141 @@
+// Contact details Start
+#contactDetails{
+    .contact_item{
+        .contactBox{
+            padding: 50px;
+            background: $commonColor;
+            box-shadow: $shadowOne;
+            .contactBoxIcon{
+                color: $primaryColor1;
+                font-size: 22px;
+
+            }
+            @include largeDevice(){
+                padding: 30px;
+            }
+            @include mediumDevice(){
+                padding: 25px;
+            }
+
+            .contactBoxInfo{
+                margin-left: 20px;
+                h4{
+                    font-size: 24px;
+                    line-height: 34px;
+                    color: $textColor;
+                    font-weight: 700;
+                    @include largeDevice(){
+                        font-size: 20px;
+                    }
+                    @include mediumDevice(){
+                        font-size: 20px;
+                    }
+                }
+                P{
+                    font-size: 16px;
+                    color: $paragraphColor;
+                    line-height: 28px;
+                    margin: 16px 0;
+                    font-family: $secondaryFont;
+                    @include largeDevice(){
+                        font-size: 15px;
+                        margin: 10px 0;
+                    }
+                    @include mediumDevice(){
+                        margin: 10px 0;
+                        font-size: 15px;
+                    }
+                }
+                h6{
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 28px;
+                    color: $textColor;
+                    text-transform: uppercase;
+                    @include largeDevice(){
+                        line-height: 18px;
+                    }
+
+                    @include mediumDevice(){
+                        line-height: 10px;
+                    }
+                }
+                a{
+                    display: inline-block;
+                    font-family: $secondaryFont;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: $paragraphColor;
+                    margin: 6px 0 16px;
+                    transition: 0.5s;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    &:hover{
+                        color: $primaryColor1;
+                    }
+                }
+
+                ul{
+                    margin-bottom: 16px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    li{
+                        margin-right: 10px;
+                    }
+                }
+
+                
+            }
+        }
+    }
+}
+// Contact details end
+
+// Contact Form Start
+#contactForm{
+    margin-top: 100px;
+    .ContactFormContent{
+        box-shadow: 0px 5px 30px rgba(17,22,30,0.08);
+
+        .contactFormInfo{
+            width: 100%;
+            padding: 30px;
+            
+            form{
+                h3{
+                    font-size: 36px;
+                    font-weight: 700;
+                    line-height: 46px;
+                    color: $textColor;
+                    margin-bottom: 18px;
+                }
+                .form-input{
+                    input,textarea{
+                        font-size: 16px;
+                        font-family: $secondaryFont;
+                        line-height: 28px;
+                        color: $paragraphColor;
+                        height: 56px;
+                        padding: 14px 20px;
+                        background: #F1F3F4;
+                        border: none;
+                        margin-bottom: 24px;
+                        
+                    }
+                    textarea{
+                        height: 250px;
+                    }
+
+                    .contactFormBtn{
+                        
+                    }
+                }
+            }
+
+
+        }
+    }
+    
+}

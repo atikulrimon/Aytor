@@ -1,0 +1,148 @@
+#shopingSidemenu{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0,0.7);
+    z-index: 100000000000;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.7s;
+    opacity: 0;
+    .cartMenuSide{
+        width: 450px;
+        margin-left: auto;
+        background: $commonColor;
+        height: 100vh;
+        padding: 80px 30px;
+        position: relative;
+        .cartSideContent{ 
+            .cartSideTitle{
+                h2{
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: $blackColor;
+                    padding-bottom: 15px;
+                }
+            }
+            .shopingProductList{
+                ul{
+                    .shopCartItem{
+                        padding: 30px 10px 30px 90px;
+                        position: relative;
+                        border-bottom: 1px solid rgba(0,0,0,0.1);
+                        overflow: hidden;
+                        &:first-child{
+                            border-top: 1px solid rgba(0,0,0,0.1);
+                        }
+                        
+                        .miniCartImg{
+                            position: absolute;
+                            top: 18px;
+                            left: 0;
+                            display: inline-block;
+                            width: 75px;
+                            height: 75px;
+                            overflow: hidden;
+                            transition: 0.5s;
+                            &:hover{
+                                transform: scale(1.1);
+                            }
+                        }
+
+                        .miniCartProTitle{
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: $textColor;
+                            line-height: 26px;
+                            transition: 0.5s;
+                            &:hover{
+                                color: $primaryColor1;
+                            }
+                        }
+
+                        p{
+                            color: $primaryColor1;
+                            font-family: $secondaryFont;
+                            font-size: 14px;
+                            margin-top: 5px;
+                        }
+
+                        .miniCartProRemove{
+                            border: none;
+                            padding: 0;
+                            background: transparent;
+                            outline: 0;
+                            position: absolute;
+                            top: 50%;
+                            right: 0;
+                            transform: translateY(-50%);
+                            color: $aseColor;
+                            transition: 0.5s;
+                            &:hover{
+                                color: $primaryColor1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .shopSideTotal{
+                margin: 25px 0;
+                h3{
+                    font-size: 18px;
+                    font-family: $secondaryFont;
+                    color: $blackColor;
+                    font-weight: 700;
+                    span{
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: $textColor;
+                        margin-left: 7px;
+                    }
+
+                }
+            }
+
+            .viewCheckoutBtn{
+                a{
+                    display: block;
+                    background: $primaryColor1;
+                    padding: 18px 21px;
+                    color: $commonColor;
+                    font-size: 18px;
+                    width: 180px;
+                    text-align: center;
+                    transition: 0.3s;
+                    &:hover{
+                        background: $blackColor;
+
+
+                    }
+                }
+            }
+        }
+
+        .CartSideClose{
+            width: 50px;
+            height: 50px;
+            font-size: 21px;
+            border-radius: 50%;
+            background: transparent;
+            color: $blackColor;
+            border: 1px solid $blackColor;
+            line-height: 50px;
+            text-align: center;
+            position: absolute;
+            top: 21px;
+            right: 35px;
+            transition: 0.5s;
+            &:hover{
+                color: $primaryColor1; 
+                border: 1px solid $primaryColor1;
+                transform: rotate(90deg);
+                font-size: 22px ;
+            }
+        }
+    }
+
+}

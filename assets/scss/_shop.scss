@@ -48,6 +48,14 @@
         }
     }
 
+    .shopProductBoxList{
+        .shopProductBoxListItem{
+            background: $commonColor;
+            padding: 15px;
+            box-shadow: $shadowOne;
+        }
+    }
+
     .shopProductUpDownBtn{
         padding-bottom: 100px;
         ul{

@@ -4,4 +4,18 @@
     background-size: cover;
     background-position: center;
     color: $commonColor;
+    .errorContent{
+        margin-top: 250px;
+        h4{
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 34px;
+        }
+        p{
+            font-family: $secondaryFont;
+            font-size: 16px;
+            line-height: 28px;
+            margin: 10px 0 40px;
+        }
+    }
 }

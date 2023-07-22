@@ -1,1 +1,28 @@
+// Learn About Shop Section start
+#learAboutShop{
+    padding-top: 40px;
+    .container{
+        background: #F1F3F4;
+    }
+    .learnAboutShopEnd{
+        padding: 100px 50px;
+        .learAboutShopTextTop{
+            padding-bottom: 28px;
+            border-bottom: 1px solid $aseColor;
+            
+            h3{
+                font-size: 36px;
+                line-height: 46px;
+                font-weight: 700;
+                color: $textColor;
+            }
+            p{
+                font-size: 16px;
+                font-family: $secondaryFont;
+                margin-top: 10px;
+            }
+        }
+    }
+}
 
+// Learn About Shop Section End

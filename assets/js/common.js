@@ -85,3 +85,8 @@ $(function(){
     // Back TO Top End
       
 })
+
+// Product Item Tooltip
+
+const tooltipTriggerList = document.querySelectorAll('.tooltipHoverText')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))

@@ -284,4 +284,23 @@
         }
     }
 }
+// Description Review Information End
+
+// reletedProduct Start
+#reletedProduct{
+    .reletedProductTitle{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 46px;
+        color: $blackColor;
+        text-align: center;
+    }
+    .reletedProductContent{
+        margin: 40px 0 100px;
+        .productItemBox{
+            width: 279px;
+            padding: 0 12px;
+        }
+    }
+}
 

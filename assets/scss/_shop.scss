@@ -15,7 +15,12 @@
                 height: 40px;
                 border: none;                
             }
+
+            .shopProduct_active{
+                background: $primaryColor1;
+            }
          }
+
          .productCatagroySelect{
              select{
                  display: inline-block;

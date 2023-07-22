@@ -132,7 +132,7 @@ ol,ul{
 .productItemBox{
     width: 312px;
     position: relative;
-
+    
     overflow: hidden;
 
     .productItemBoxImg{
@@ -141,6 +141,7 @@ ol,ul{
         transition: 0.5s;
         img{
             transition: 0.5s;
+            width: 100%;
         }
         &:hover{
             img{
@@ -150,11 +151,15 @@ ol,ul{
     }
 
     .productItemBoxInfo{
-        h6{
+        a{
             font-size: 18px;
             line-height: 28px;
             font-weight: 600;
             color: $textColor;
+            transition: 0.5s;
+            &:hover{
+                color: $primaryColor1;
+            }
         }
         p{
             font-size: 16px;

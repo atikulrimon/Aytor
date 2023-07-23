@@ -1,0 +1,89 @@
+#blogContent{
+    
+    .blogLeftSectionItem{
+        margin-bottom: 40px;
+        box-shadow: 0px 5px 30px 0px #11161E14;
+
+        .blogContentImg{
+            
+        }
+
+        .blogContentInfo{
+            width: 100%;
+            padding: 40px 40px 30px 40px;
+            .adminDate{
+                a{
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: $paragraphColor;
+                    padding: 0 20px;
+                    transition: 0.5s;
+                    &:first-child{
+                        border-right: 1px solid #BDBDBD;
+                    }
+                    &:hover{
+                        color: $primaryColor1;
+                    }
+                }
+            }
+
+            .blogContentInfoTitle{
+                a{
+                    display: inline-block;
+                    font-size: 30px;
+                    line-height: 40px;
+                    color: $blackColor;
+                    padding: 6px 0 16px;
+                    font-weight: 700;
+                    transition: 0.5s;
+                    &:hover{
+                        color: $primaryColor1;
+                    }
+                }
+            }
+
+            .blogContentDes{
+                p{
+                    font-size: 16px;
+                    line-height: 28px;
+                    font-family: $secondaryFont;
+                    color: $paragraphColor;
+                    text-align: justify;
+                }
+            }
+
+            .blogContentBtn{
+                margin-top: 16px;
+                a{
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: $paragraphColor;
+                    transition: 0.5s;
+                    padding: 5px 0;
+                    font-family: $secondaryFont;
+                    position: relative;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        width: 100%;
+                        height: 2px;
+                        transform: scaleX(0);
+                        transform-origin: left;
+                        background: $primaryColor1;
+                        transition: 0.5s;
+                    }
+                    &:hover{
+                        color: $primaryColor1;
+                        &::after{
+                            transform: scaleX(1);
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+}

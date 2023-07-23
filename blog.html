@@ -296,7 +296,7 @@
                 <div class="mobileLink">
                     <ul>
                         <li>
-                            <a href="index.html">
+                            <a href="#">
                                 Home
                                 <button class="mobileMenuArrow" type="button" data-bs-toggle="collapse" data-bs-target="#sideMenuDropdown1" aria-expanded="false" aria-controls="collapseExample">
                                     <i class="fa-solid fa-chevron-right"></i>
@@ -324,7 +324,7 @@
                         </li>
     
                         <li>
-                            <a href="about.html">
+                            <a href="#">
                                 About
                             </a>
                             
@@ -400,7 +400,7 @@
                             <div class="collapse sideMenuDropdown" id="sideMenuDropdown4">
                                 <ul class="MobileDropdown">
                                     <li>
-                                        <a href="blog.html">Blog</a>
+                                        <a href="">Blog</a>
                                     </li>
                                     <li>
                                         <a href="#">Blog Two</a>
@@ -460,15 +460,15 @@
 
 
     <!--Common Banner Section Start -->
-    <section id="sectionBanner" style="background: url(./assets/images/breadcumb_bg_checkout.jpg)">
+    <section id="sectionBanner" style="background: url(./assets/images/breadcumb_bg_1.jpg)">
             <div class="container h-100">
                 <div class="content d-flex justify-content-center align-items-center h-100">
                     <div>
-                        <h2>Checkout</h2>
+                        <h2>Blog With Sidebar</h2>
                         <div class="d-flex sectionSelection align-items-center justify-content-center">
                             <a href="index.html">Home</a>
                             <span>/</span>
-                            <h6>Checkout</h6>
+                            <h6>Blog With Sidebar</h6>
                         </div>
                     </div>
                 </div>
@@ -477,170 +477,159 @@
     </section>
     <!--Common Banner Section End -->
 
+    <!--Blog Content Section Start -->
+    <section id="blogContent">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
 
+                    <div class="blogLeftSectionItem">
+                        <div class="blogContentImg">
+                            <div class="blogContentImgSlide">
+                                <div class="blogImgSlideItem">
+                                    <a href="#">
+                                        <img src="./assets/images/blog-s-1-1.jpg" class="img-fluid" alt="">
+                                    </a>
+                                </div>
 
-    <!--Checkout Form Section Start -->
-    <section id="checkoutForm">
-            <div class="container">
-                <div class="coupon d-flex align-items-center">
-                    <i class="fa-solid fa-circle-exclamation"></i>
-                    <p>Have a coupon? <a href="#">Click here to enter your code</a></p>
-                </div>
-    
-                <form class="infoForm" action="">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="formHeadline">
-                                <h2>Billing Information</h2>
-                            </div>
-    
-                            <div class="nameInput d-flex flex-nowrap inputSection">
-                                <div class="firstName w-50">
-                                    <label for="firstName">First Name*</label>
-                                    <input type="text" id="firstName" class="w-100" placeholder="Your First name...">
+                                <div class="blogImgSlideItem">
+                                    <a href="#">
+                                        <img src="./assets/images/blog-s-1-3.jpg" class="img-fluid" alt="">
+                                    </a>
                                 </div>
-                                <div class="lastName w-50 ms-3">
-                                    <label for="lastName">Last Name*</label>
-                                    <input type="text" id="lastName" class="w-100" placeholder="Your Last name...">
+
+                                <div class="blogImgSlideItem">
+                                    <a href="#">
+                                        <img src="./assets/images/blog-s-1-7.jpg" class="img-fluid" alt="">
+                                    </a>
                                 </div>
+
                             </div>
-    
-                            <div class="companyName inputSection">
-                                <label for="companyName">Company name (optional)*</label>
-                                <input type="text" id="companyName" class="w-100" placeholder="Name...">
-                            </div>
-    
-                            <div class="email inputSection">
-                                <label for="emailInput">Email*</label>
-                                <input type="email" id="emailInput" class="w-100" placeholder="youremail@gmail.com">
-                            </div>
-    
-                            <div class="telephone inputSection">
-                                <label for="telephoneInput">Telephone*</label>
-                                <input type="tel" id="telephoneInput" class="w-100" placeholder="+123...">
-                            </div>
-    
-                            <div class="country inputSection">
-                                <label for="countryInput">Country*</label>
-                                <select name="countryInput" id="countryInput" class="w-100">
-                                    <option value="Afghanistan">Afghanistan</option>
-                                    <option value="Åland Islands">Åland Islands</option>
-                                    <option value="Albania">Albania</option>
-                                    <option value="Algeria">Algeria</option>
-                                    <option value="American Samoa">American Samoa</option>
-                                    <option value="Andorra">Andorra</option>
-                                    <option value="Angola">Angola</option>
-                                    <option value="Anguilla">Anguilla</option>
-                                    <option value="Antarctica">Antarctica</option>
-                                    <option value="Antigua and Barbuda">Antigua and Barbuda</option>
-                                    <option value="Argentina">Argentina</option>
-                                    <option value="Armenia">Armenia</option>
-                                    <option value="Aruba">Aruba</option>
-                                    <option value="Australia">Australia</option>
-                                    <option value="Australia" selected>Bangladesh</option>
-                                </select>
-                            </div>
-    
-                            <div class="streetAddress inputSection">
-                                <label for="streetAddrInput">Street Address</label>
-                                <input type="text" id="streetAddrInput" class="w-100 mb-4" placeholder="House and street name...">
-                                <input type="text" id="streetAddrInput" class="w-100" placeholder="Apartment, suite, unit, etc. (optional)">
-                            </div>
-    
-                            <div class="townCity inputSection">
-                                <label for="townCityInput">Town / City*</label>
-                                <select name="townCity" id="countryInput" class="w-100">
-                                    <option value="Afghanistan">Chittagong</option>
-                                    <option value="Åland Islands" selected>Dhaka</option>
-                                    <option value="Albania">Sylhet</option>
-                                    <option value="Algeria">Khulna</option>
-                                    <option value="American Samoa">Magura</option>
-                                    <option value="Andorra">Bogra</option>
-                                    <option value="Angola">Dinajpur</option>
-                                    <option value="Anguilla">Comilla</option>
-                                </select>
-                            </div>
-    
-                            <div class="streetAddress inputSection">
-                                <label for="streetAddrInput">Post Code*</label>
-                                <input type="text" id="streetAddrInput" class="w-100" placeholder="Code...">
-                            </div>
-    
                         </div>
-    
-    
-                        <!-- Form Right Start -->
-                        <div class="col-lg-6">
-                            <div class="formHeadline">
-                                <h2>Additional Information</h2>
+
+                        <div class="blogContentInfo">
+                            <div class="adminDate d-flex align-items-center">
+                                <a class="ps-0" href="#">Michel-Fashion Admin</a>
+                                <a href="#"><i class="fa-regular fa-calendar-days"></i> January 04, 2022</a>
                             </div>
-    
-                            <div class="orderNotes inputSection">
-                                <label for="orderNoteInput">Order notes (optional)*</label>
-                                <textarea id="orderNoteInput" rows="" cols="" placeholder="Notes about your order, e.g. special notes for delivery." class="w-100"></textarea>
+
+                            <div class="blogContentInfoTitle">
+                                <a href="#">Color, Size, Material Swatches</a>
                             </div>
-                            
+
+                            <div class="blogContentDes">
+                                <p>Seamlessly cultivate low-risk high-yield processes whereas effective platforms. Professionally restore mission-critical proces  improvements error-free results. Interactively monetize intermandated experiences through equity invested customer service. Dramatically engage user friendly paradigms via fully tested collaboration and idea-sharing. Energistically pursue wireless.</p>
+                            </div>
+
+                            <div class="blogContentBtn">
+                                <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+
                         </div>
+
                     </div>
-                </form>
-    
-                <div class="orderHeadline">
-                    <h6>Your Order</h6>
+
+                    <div class="blogLeftSectionItem">
+                        <div class="blogContentImg">
+                            <a href="#"><img src="./assets/images/blog-s-1-2.jpg" class="img-fluid" alt=""></a>
+                        </div>
+
+                        <div class="blogContentInfo">
+                            <div class="adminDate d-flex align-items-center">
+                                <a class="ps-0" href="#">Michel-Fashion Admin</a>
+                                <a href="#"><i class="fa-regular fa-calendar-days"></i> January 04, 2022</a>
+                            </div>
+
+                            <div class="blogContentInfoTitle">
+                                <a href="#">Fashion coats 2022: key trends</a>
+                            </div>
+
+                            <div class="blogContentDes">
+                                <p>Seamlessly cultivate low-risk high-yield processes whereas effective platforms. Professionally restore mission-critical proces  improvements error-free results. Interactively monetize intermandated experiences through equity invested customer service. Dramatically engage user friendly paradigms via fully tested collaboration and idea-sharing. Energistically pursue wireless.</p>
+                            </div>
+
+                            <div class="blogContentBtn">
+                                <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="blogLeftSectionItem">
+                        <!-- <div class="blogContentImg">
+                            <a href="#"><img src="./assets/images/blog-s-1-2.jpg" class="img-fluid" alt=""></a>
+                        </div> -->
+
+                        <div class="blogContentInfo">
+                            <div class="adminDate d-flex align-items-center">
+                                <a class="ps-0" href="#">Michel-Fashion Admin</a>
+                                <a href="#"><i class="fa-regular fa-calendar-days"></i> January 04, 2022</a>
+                            </div>
+
+                            <div class="blogContentInfoTitle">
+                                <a href="#">Minimal Design Inspiration</a>
+                            </div>
+
+                            <div class="blogContentDes">
+                                <p>Seamlessly cultivate low-risk high-yield processes whereas effective platforms. Professionally restore mission-critical proces  improvements error-free results. Interactively monetize intermandated experiences through equity invested customer service. Dramatically engage user friendly paradigms via fully tested collaboration and idea-sharing. Energistically pursue wireless.</p>
+                            </div>
+
+                            <div class="blogContentBtn">
+                                <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="blogLeftSectionItem">
+                        <!-- <div class="blogContentImg">
+                            <a href="#"><img src="./assets/images/blog-s-1-2.jpg" class="img-fluid" alt=""></a>
+                        </div> -->
+                        <div class="sectionVideo">
+                            <img src="./assets/images/blog-s-1-6.jpg" alt="" class="img-fluid videoThum">
+
+                            <a href="https://youtu.be/GogcDtMpgMc" class="videoPlayBtn venobox" data-autoplay="true" data-vbtype="video">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+
+                        <div class="blogContentInfo">
+                            <div class="adminDate d-flex align-items-center">
+                                <a class="ps-0" href="#">Michel-Fashion Admin</a>
+                                <a href="#"><i class="fa-regular fa-calendar-days"></i> January 04, 2022</a>
+                            </div>
+
+                            <div class="blogContentInfoTitle">
+                                <a href="#">Fashion T-shirt 2022: key trends</a>
+                            </div>
+
+                            <div class="blogContentDes">
+                                <p>Seamlessly cultivate low-risk high-yield processes whereas effective platforms. Professionally restore mission-critical proces  improvements error-free results. Interactively monetize intermandated experiences through equity invested customer service. Dramatically engage user friendly paradigms via fully tested collaboration and idea-sharing. Energistically pursue wireless.</p>
+                            </div>
+
+                            <div class="blogContentBtn">
+                                <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                
+
                 </div>
-                <form action="" class="productForm w-100">
-                    <table class="w-100 text-center productTable">
-                        <thead class="productHeadline">
-                            <tr class="productTitle">
-                                <td>Image</td>
-                                <td>Product Name</td>
-                                <td>Price/Unit	</td>
-                                <td>Quantity</td>
-                                <td>Total</td>
-                            </tr>
-                        </thead>
-    
-                        <tbody class="productTableBody">
-                            <tr>
-                                <td>
-                                    <a href="#">
-                                        <img src="./assets/images/cart-img-1-1.jpg" alt="" class="img-fluid">
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="#">
-                                        <h6>Jacket Hoodie Sweater</h6>
-                                    </a>
-                                </td>
-                                <td>$130.00</td>
-                                <td class="cartBox">
-                                    
-                                    <div class="qualityCart  d-flex align-items-center justify-content-center">
-                                        <button class="qualityBtn qualityBtndecrement" data-behaviour="decrement">-</button>
-                                        <input class="qualityInput" type="text">
-                                        <button class="qualityBtn qualityBtnincrement" data-behaviour="increment">+</button>
-                                    </div>
-    
-                                </td>
-                                <td>$130.00</td>
-                            </tr>
-    
-                            <tr class="total">
-                                <td>Subtotal</td>
-                                <td colspan="4" class="text-end">$130.00</td>
-                            </tr>
-                        
-                            <tr class="total">
-                                <td>Total</td>
-                                <td class="totalAmmout" colspan="4" class="text-end">$130.00</td>
-                            </tr>
-                        
-                        </tbody>
-                    </table>
-                </form>
-    
+
+                <div class="col-lg-4"></div>
             </div>
+        </div>
     </section>
-    <!--Checkout Form Section End -->
+    <!--Blog Content Section End -->
+
+
+
 
 
 
@@ -867,7 +856,7 @@
     <!-- Common Js -->
     <script src="./assets/js/common.js"></script>
     <!-- Main Js -->
-    <script src="./assets/js/checkout.js"></script>
+    <script src="./assets/js/blog.js"></script>
    
 </body>
 </html>

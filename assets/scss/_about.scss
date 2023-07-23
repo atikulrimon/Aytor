@@ -1,28 +1,352 @@
 // Learn About Shop Section start
 #learAboutShop{
-    padding-top: 40px;
+    padding: 0 0 100px;
     .container{
-        background: #F1F3F4;
+        position: relative;
+        padding: 40px 20px 40px 0;
+        .learnClipShape{
+            position: absolute;
+            inset: 0;
+            clip-path: polygon(6% 0, 100% 0, 100% 100%, 33% 100%, 7% 47%);
+            background: #F1F3F4;
+            z-index: -2;
+        }
+
+        .learnAboutImg{
+            position: relative;
+            img{
+                position: relative;
+                z-index: 1;
+            }
+            .imgAnimateShpe{
+                position: absolute;
+                bottom: -43px;
+                left: -50px;
+                width: 284px;
+                height: 313px;
+                border: 14px solid #BDBDBD;
+                z-index: -1;
+                animation: aboutShopAnimate 3s linear infinite;
+                @keyframes aboutShopAnimate {
+                    0%{
+                        left: -50px;
+                    }
+    
+                    100%{
+                        left: 5px;
+                    }
+                }
+            }
+        }
+    
+        .learnAboutShopEnd{
+    
+            padding-left: 108px;
+    
+            .learAboutShopTextTop{
+                padding-bottom: 28px;
+                border-bottom: 1px solid #BDBDBD;
+                
+                h3{
+                    font-size: 36px;
+                    line-height: 46px;
+                    font-weight: 700;
+                    color: $textColor;
+                }
+                p{
+                    font-size: 16px;
+                    font-family: $secondaryFont;
+                    margin-top: 10px;
+                }
+            }
+    
+            .learAboutShopPoint{
+                padding: 34px 0 29px;
+                ul{
+                    li{
+                        margin-bottom: 10px;
+                        .pointIcon{
+                            width: 16px;
+                            height: 16px;
+                            border-radius: 50%;
+                            font-size: 10px;
+                            line-height: 16px;
+                            text-align: center;
+                            background: $primaryColor1;
+                            color: $commonColor;
+                            margin-right: 10px;
+                        }
+                        p{
+                            font-size: 16px;
+                            line-height: 28px;
+                            font-family: $secondaryFont;
+                            color: $paragraphColor;
+                        }
+                    }
+                }
+            }
+    
+            .learnAboutBtn{
+                display: inline-block;
+                font-size: 18px;
+                line-height:30px;
+                color: w$commonColor;
+                background: $primaryColor1;
+                padding: 13px 18px;
+            }
+    
+        }
     }
-    .learnAboutShopEnd{
-        padding: 100px 50px;
-        .learAboutShopTextTop{
-            padding-bottom: 28px;
-            border-bottom: 1px solid $aseColor;
-            
-            h3{
-                font-size: 36px;
-                line-height: 46px;
-                font-weight: 700;
+
+    
+
+    
+}
+
+// Learn About Shop Section End
+
+// Archivement Section Start
+#archivement{
+    .archivementIcon{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: #F1F3F4;
+        text-align: center;
+        line-height: 100px;
+    }
+    .arcivementTitle{
+        h3{
+            font-size: 36px;
+            line-height: 46px;
+            color: $primaryColor1;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+    }
+
+    .archivementDes{
+        p{
+            font-size: 16px;
+            line-height: 28px;
+            color: $paragraphColor;
+        }
+    }
+
+}
+// Archivement Secton End
+
+
+// Future Section Start
+#feature{
+    margin: 100px 0;
+    .futureItem{
+        padding: 15px 30px;
+        display: flex;
+        align-items: center;
+        border-right: 2px solid #F1F1F1;
+        
+
+        .futureItemImg{
+            margin-right: 10px;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: $primaryColor1;
+            text-align: center;
+            line-height: 70px;
+        }
+
+        .futureItemText{
+            h5{
+                font-size: 20px;
+                line-height: 30px;
                 color: $textColor;
+                font-weight: 600;
             }
             p{
-                font-size: 16px;
                 font-family: $secondaryFont;
-                margin-top: 10px;
+                font-size: 14px;
+                line-height: 28px;
+                color: $paragraphColor;
+                span{
+                    color: $primaryColor1;
+                }
             }
         }
     }
 }
+// Future Section End
 
-// Learn About Shop Section End
+// Team Section Start
+#team{
+    .teamTitle{
+        font-size: 36px;
+        line-height: 46px;
+        font-weight: 700;
+        color: $textColor;
+        text-align: center;
+        margin-bottom: 26px;
+    }
+
+    .teamItem{
+        position: relative;
+       
+        .teamItemSlideArrows{
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            color: $blackColor;
+            border: 1px solid $paragraphColor;
+            font-size: 14px;
+            background: transparent;
+            line-height: 34px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            z-index: 9999999999;
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover{
+                background: $primaryColor1;
+                color: $commonColor;
+                border: 1px solid transparent;
+            }
+            &.fa-chevron-left{
+                transform: translateY(-50%);
+                left: -45px;
+            }
+            &.fa-chevron-right{
+                transform: translateY(-50%);
+                right: -45px;
+            }
+        }
+        .teamItemBox{
+            box-shadow: 0px 5px 14px rgba(17,22,30,0.08);
+            background: $commonColor;
+            margin-bottom: 100px;
+
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+
+            .teamItemImg{
+                overflow: hidden;
+                img{
+                    transition: 0.5s;
+                }
+            }
+            .teamItemInfo{
+                padding: 25px 0;
+                h4{
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: $textColor;
+                    font-weight: 600;
+                }
+                h6{
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: $primaryColor1;
+                    margin: 4px 0;
+                }
+                ul{
+                    li{
+                        a{
+                            font-size: 16px;
+                            font-family: $secondaryFont;
+                            color: $paragraphColor;
+                            margin: 10px 5px 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        
+    }
+}
+// Team Section End
+
+
+
+
+// Aytor Instagram Section Start
+#aytorInstagram{
+    .aytorInstaTitle{
+        h3{
+            color: #11161E;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 46px;
+            text-align: center;
+        }
+    }
+
+    .aytorInstaItem{
+        padding: 26px 0 45px;
+        .aytorInstaItemBox{
+            padding-bottom: 15px;
+            .aytorIstaItemImg{
+                position: relative;
+                .aytorInstaOverlay{
+                    position: absolute;
+                    inset: 0;
+                    background: #151a327f;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transform: scale(0);
+                    transition: 0.4s;
+                    a{
+                        transition: 0.5s;
+                        font-size: 22px;
+                        color: $commonColor;
+                        transform: scale(0);
+                        &:hover{
+                            color: $primaryColor1;
+                        }
+                    }
+                }
+                &:hover{
+                    .aytorInstaOverlay{
+                        transform: scale(1);
+                    }
+                    a{
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+
+        .slick-dots{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            li{
+                
+                margin: 0 2px;
+                button{
+                    font-size: 0;
+                    width: 10px;
+                    height: 6px;
+                    background: #BDBDBD;
+                    border-radius: 5px;
+                    border: none;
+                    transition: 0.3s;
+
+                }
+
+                &.slick-active{
+                    button{
+                        width: 20px;
+                        background: $primaryColor1;
+                    }
+                }
+            }
+        }
+    }
+}

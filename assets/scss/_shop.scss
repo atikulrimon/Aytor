@@ -20,6 +20,29 @@
                 background: $primaryColor1;
             }
          }
+         .showProductItemCount{
+            font-size: 16px;
+            line-height: 26px;
+            color: $paragraphColor;
+            font-family: $secondaryFont;
+            margin-left: 30px;
+            position: relative;
+            .countLine{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background: #F1F1F1;
+                div{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    background: $paragraphColor;
+                }
+            }
+         }
 
          .productCatagroySelect{
              select{
@@ -49,10 +72,107 @@
     }
 
     .shopProductBoxList{
+
         .shopProductBoxListItem{
             background: $commonColor;
-            padding: 15px;
-            box-shadow: $shadowOne;
+            padding: 20px;
+            box-shadow: 0px 0px 30px rgba(17,22,30,0.08);
+            margin-bottom: 40px;
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+            .productListImg{
+                overflow: hidden;
+                max-width: 312px;
+                width: 100%;
+                position: relative;
+                img{
+                    transition: 0.5s;
+                }
+                .discountOvarlay{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 2px 20px;
+                    font-size: 16px;
+                    color: $commonColor;
+                    background: $primaryColor1;
+                }
+            }
+
+            .productListInfo{
+                margin-left: 30px;
+                .listProductTitle{
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: $blackColor;
+                    font-weight: 700;
+                    transition: 0.5s;
+                    &:hover{
+                        color: $primaryColor1;
+                    }
+                }
+                .productPrice{
+                    font-family: $secondaryFont;
+                    margin: 12px 0 7px;
+                    h6{
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: $primaryColor1;
+                        del{
+                            color: $aseColor;
+                            margin-left: 15px;
+                        }
+                    }
+
+                }
+
+                .productRating{
+                    margin-bottom: 15px;
+                    ul{
+                        li{
+                            color: $primaryColor1;
+                            font-size: 14px;
+
+                        }
+                    }
+                }
+
+                p{
+                    font-style: 18px;
+                    font-family: $secondaryFont;
+                    color: $paragraphColor;
+                    line-height: 30px;
+                    margin-bottom: 20px;
+                }
+
+                .productActionBtn{
+                    ul{
+                        li{
+                            a{
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                font-size: 12px;
+                                text-align: center;
+                                line-height: 30px;
+                                margin-right: 5px;
+                                background: $blackColor;
+                                color: $commonColor;
+                                display: inline-block;
+                                transition: 0.5s;
+                                &:hover{
+                                    background: $primaryColor1;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
         }
     }
 
@@ -81,4 +201,11 @@
         }
     }
  
+}
+
+.productBoxActive{
+    display: block;
+}
+.productBoxHide{
+    display: none;
 }

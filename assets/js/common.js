@@ -2,7 +2,7 @@
 $(window).on('load',function(){
     $('#preloader').hide();
 })
-  
+
 // Preloader End
   
   
@@ -90,3 +90,9 @@ $(function(){
 
 const tooltipTriggerList = document.querySelectorAll('.tooltipHoverText')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+      // Video Play Spacial Offer Section (VenoBox) Start
+      new VenoBox({
+        maxWidth: '80%',
+      });
+      // Video Play Spacial Offer Section (VenoBox) End

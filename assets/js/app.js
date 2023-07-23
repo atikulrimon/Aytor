@@ -24,32 +24,32 @@ $(function(){
       
     // Arrivals Product Silder
       $('.arrivals_slider').slick({
-        slidesToShow: 4,
-        autoplay: false,
-        autoplaySpeed: 2000,
-        prevArrow: `<i class="fa-solid fa-chevron-left arrivalSliderArrow"></i>`,
-        nextArrow: `<i class="fa-solid fa-chevron-right arrivalSliderArrow"></i>`,
-        responsive: [
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              arrows:false,
-              autoplay: true
+          slidesToShow: 4,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          prevArrow: `<i class="fa-solid fa-chevron-left arrivalSliderArrow"></i>`,
+          nextArrow: `<i class="fa-solid fa-chevron-right arrivalSliderArrow"></i>`,
+          responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows:false,
+                autoplay: true
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows:false,
+                autoplay: true
+              }
             }
-          },
-          {
-            breakpoint: 576,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              arrows:false,
-              autoplay: true
-            }
-          }
-        ]
-      
+          ]
+  
       })
 
       // coundown Js

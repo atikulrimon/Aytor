@@ -51,19 +51,19 @@ $(function(){
     })
 
     // Newsletter Popup Start
-          // setTimeout(function(){
-          //   document.querySelector('#newsletter').style.transform ='scale(1)'
-          // },2000)
+          setTimeout(function(){
+            document.querySelector('#newsletter').style.transform ='scale(1)'
+          },2000)
     
-          // function newsPopUpClose(){
-          //   document.querySelector('#newsletter').style.transform = 'scale(0)'
-          // }
+          function newsPopUpClose(){
+            document.querySelector('#newsletter').style.transform = 'scale(0)'
+          }
           
-          // document.querySelector('.newsletterClose').addEventListener('click',newsPopUpClose)
+          document.querySelector('.newsletterClose').addEventListener('click',newsPopUpClose)
     
-          // $("#newsletter").click(function(){
+          $("#newsletter").click(function(){
             
-          // });
+          });
     // Newsletter Popup End
 
     // Back TO Top Start

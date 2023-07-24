@@ -229,10 +229,8 @@
 // Description Review Information Start
 #desReviewInfo{
     padding: 100px;
-    
     .desReviewBtn{
         display: flex;
-        margin-bottom: 40px;
         ul{
             li{
                 button{
@@ -255,14 +253,70 @@
     .desReviewButtomSec{
         .tab-content{
             .desRevieButtContent1{
+                margin-top: 40px;
                 font-family: $secondaryFont;
                 font-size: 15px;
                 line-height: 28px;
             }
 
+            .desRevieButtContent2{
+                .reviewInfo{
+                    .reviewList{
+                        .reviewListItem{
+                            padding: 35px 0 40px;
+                            border-bottom: 1px solid #6b6b6b4f;
+
+                            .commentAuthorImg{
+                                width: 80px;
+                                height: 80px;
+                                border-radius: 50%;
+                                overflow: hidden;
+                            }
+
+                            .commentAuthorInfo{
+                                margin-left: 20px;
+                                .reviewRating{
+                                    li{
+                                        color: $primaryColor1;
+                                        font-size: 13px;
+                                        margin-right: 2px;
+                                    }
+                                }
+
+                                .name_date{
+                                    margin: 5px 0 10px;
+                                    h4{
+                                        font-size: 24px;
+                                        font-weight: 600;
+                                        line-height: 30px;
+                                        color: $textColor;
+                                        span{
+                                            font-size: 12px;
+                                            font-weight: 400;
+                                            font-family: $secondaryFont;
+                                            color: $paragraphColor;
+                                        }
+                                    }
+                                }
+
+                                p{
+                                    font-family: $secondaryFont;
+                                    color: #6b6b6b;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                }
+
+                            }
+
+                        }
+                    }
+                }
+            }
+
 
 
             .desRevieButtContent3{
+                margin-top: 40px;
                 .additionalInfo{
                     table{
                         tr{

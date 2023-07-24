@@ -1,68 +1,47 @@
 
-$(function(){
 
-  /*
-    $(".qualityCart").on("click", function (e) {
-      
-      let targetElement = $(e.target).data("behaviour");
-  
-      if (targetElement == "increment") {
-          let cartFieldValue = $(this).children("input").val();
-          cartFieldValue++;
-          $(this).children("input").val(cartFieldValue);
-          
-      } else if (targetElement == "decrement") {
-          let cartFieldValue = $(this).children("input").val();
-          cartFieldValue--;
-          $(this).children("input").val(cartFieldValue <= 1 ? "1" : cartFieldValue);
-      } else {
-         return false
-      }
-    });
-  */
+// $(function(){
+//   $(".qualityCart").on("click", function (e) {
+//     let targetElement = $(e.target).data("behaviour");
 
-    $(".qualityCart").on("click",function(e){
-      let targetElement = $(e.target).data("behaviour");
-
-      if(targetElement == "increment"){
-        let cartFieldValue = $(this).children("input").val();
-        cartFieldValue++;
-        $(this).children("input").val(cartFieldValue);
-      }
-      else if(targetElement == "decrement"){
-        let cartFieldValue = $(this).children("input").val();
-        cartFieldValue--;
-        $(this).children("input").val(cartFieldValue <= 1 ? "1" : cartFieldValue);
-      }
-      else{
+//     if (targetElement == "increment") {
+//         let cartFieldValue = $(this).children("input").val();
+//         cartFieldValue++;
+//         $(this).children("input").val(cartFieldValue);
         
-      }
+//     } else if (targetElement == "decrement") {
+//         let cartFieldValue = $(this).children("input").val();
+//         cartFieldValue--;
+//         $(this).children("input").val(cartFieldValue <= 1 ? "1" : cartFieldValue);
+//     } else {
+//        return false,
+//     }
+//   });
+// })
 
-    })
 
+let qualityCart = document.querySelector('.qualityCart');
 
-
-})
-
-/*
-function increment(){
-  let cartFiled = document.querySelector('.qualityInput')
-  cartFiled.value++
-}
-$('.qualityBtnincrement').on('click', increment)
-
-function decrement(){
-  let cartFiled = document.querySelector('.qualityInput')
+qualityCart.addEventListener('click',function(){
   
+  let targetElement = qualityCart.e.taget.data("behaviour");
+
+  if(targetElement == "increment"){
+    let cartFieldValue = qualityCart.children("input").value;
+
+    cartFieldValue++
+    qualityCart.children("input").value(cartFieldValue);
+
+  }
   
-  if(cartFiled.value <= 1){
-    cartFiled.value = 1;
-  }else{
-    cartFiled.value--
+  else if(targetElement == "decrement"){
+    let cartFieldValue = qualityCart.children("input").value;
+
+    cartFieldValue--
+    qualityCart.children("input").value(cartFieldValue <= 1? "1" : cartFieldValue);
+  }
+  else{
+    return false
   }
 
-  cartFiled.value <= 1 ? cartFiled.value = 1 : cartFiled.value--
-}
-$('.qualityBtndecrement').on('click', decrement)
-
-*/
+})

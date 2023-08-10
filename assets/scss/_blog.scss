@@ -177,16 +177,19 @@
 
         .blogCatagory{
             margin-top: 50px;
-            .cataTitle{
+            .rowTitle{
+                margin-top: 50px;
+                margin-bottom: 30px;
                 h5{
                     font-size: 20px;
                     font-weight: 600;
                     line-height: 30px;
                     position: relative;
+                    display: inline-block;
                     &::after{
                         content: '';
                         position: absolute;
-                        width: 33%;
+                        width: 100%;
                         bottom: 0;
                         left: 0;
                         height: 2px;
@@ -194,6 +197,43 @@
                     }
                 }
             }
+
+            .catagoryContent{
+                ul{
+                    li{
+                        padding: 10px 0;
+                        border-bottom: 1px solid #F1F3F4;
+                        position: relative;
+                        a{
+                            font-size: 16px;
+                            line-height: 26px;
+                            color: $paragraphColor;
+                            transition: 0.5s;
+                            display: inline-block;
+                            width: 100%;
+                            position: relative;
+                            &:hover{
+                                color: $primaryColor1;
+                                span{
+                                    color: $primaryColor1;
+                                }
+                            }
+                            span{
+                                position: absolute;
+                                top: 50%;
+                                right: 0;
+                                transform: translateY(-50%);
+                                font-size: 16px;
+                                line-height: 26px;
+                                color: $paragraphColor;
+                                transition: 0.5s;
+                            }
+                        }
+                    }
+                }
+            }
+
         }
     }
 }
+

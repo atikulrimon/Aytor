@@ -12,6 +12,7 @@
                 text-transform: capitalize;
                 transition: 0.5s;
                 position: relative;
+                font-family: $secondaryFont;
                 padding: 20px 0;
                 &:hover{
                     color: $PrimayColor2;

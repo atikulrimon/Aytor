@@ -139,4 +139,61 @@
             }
         }
     }
+
+    .blogRightContent{
+        .searchFiled{
+            form{
+                position: relative;
+                input{
+                    font-size: 16px;
+                    line-height: 28px;
+                    padding: 16px;
+                    font-family: $secondaryFont;
+                    color: #828282;
+                    background: #F1F3F4;
+                    border: none;
+                    width: 100%;
+                    .search{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+
+                .searchIcon{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 16px 16px;
+                    font-size: 16px;
+                    line-height: 28px;
+                    a{
+                        color: #828282;
+                    }
+                }
+                
+            }
+        }
+
+        .blogCatagory{
+            margin-top: 50px;
+            .cataTitle{
+                h5{
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    position: relative;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        width: 33%;
+                        bottom: 0;
+                        left: 0;
+                        height: 2px;
+                        background: $primaryColor1;
+                    }
+                }
+            }
+        }
+    }
 }

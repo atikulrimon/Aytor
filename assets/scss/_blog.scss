@@ -175,28 +175,29 @@
             }
         }
 
-        .blogCatagory{
-            margin-top: 50px;
-            .rowTitle{
-                margin-top: 50px;
-                margin-bottom: 30px;
-                h5{
-                    font-size: 20px;
-                    font-weight: 600;
-                    line-height: 30px;
-                    position: relative;
-                    display: inline-block;
-                    &::after{
-                        content: '';
-                        position: absolute;
-                        width: 100%;
-                        bottom: 0;
-                        left: 0;
-                        height: 2px;
-                        background: $primaryColor1;
-                    }
+        .rowTitle{
+            margin: 50px 0 20px;
+
+            h5{
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 30px;
+                position: relative;
+                display: inline-block;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    height: 2px;
+                    background: $primaryColor1;
                 }
             }
+        }
+        .blogCatagory{
+            margin-top: 50px;
+            
 
             .catagoryContent{
                 ul{
@@ -233,7 +234,48 @@
                 }
             }
 
+
+        }
+
+        .recentContent{
+            .recentPost{
+                li{
+                    padding: 20px 0;
+                    border-bottom: 1px solid #F1F3F4;
+                    .recentProImg{
+                        margin-right: 20px;
+                    }
+                    .recentProInfo{
+                        h6{
+                            font-size: 16px;
+                            font-weight: 700;
+                            color: $textColor;
+                            margin-bottom: 7px;
+                        }
+                    }
+                }
+            }
         }
     }
+
+
+    .popularTag{
+        .tagContent{
+            margin-bottom: 42px;
+            a{
+                display: inline-block;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                padding: 2px 10px;
+                background: #F1F3F4;
+                color: $paragraphColor;
+                border-radius: 3px;
+                margin: 0px 2px 5px 0;
+                font-family: $secondaryFont;
+            }
+        }
+    }
+
 }
 

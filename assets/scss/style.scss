@@ -128,7 +128,6 @@ Table of Content
 @import "responsive";
 @import "headerTop";
 @import "reset";
-@import "common";
 @import "nav";
 @import "index";
 @import "newsletter";
@@ -147,7 +146,8 @@ Table of Content
 @import "compare";
 @import "error";
 @import "blog";
-
+@import "searchSection";
+@import "common";
 
 $primaryColor1: #FF6F61;
 $PrimayColor2: #FF5645;

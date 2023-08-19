@@ -254,6 +254,37 @@ $(function(){
     autoplaySpeed: 2000,
     prevArrow: `<i class="fa-solid fa-chevron-left teamItemSlideArrows"></i>`,
     nextArrow: `<i class="fa-solid fa-chevron-right teamItemSlideArrows"></i>`,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   })
 
   $('.aytorInstaItem').slick({

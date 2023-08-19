@@ -5,6 +5,21 @@
     background-size: cover !important;
     position: relative;
     margin-bottom: 100px;
+
+    @include largeDevice(){
+        height: 380px;
+    };
+
+    @include mediumDevice(){
+        height: 350px;
+    }
+    // @include smallDevice(){
+    //     height: 350px;
+    // }
+    // @include xSmallDeviec(){
+    //     height: 265px;
+    // }
+
     .content{
         position: relative;
         z-index: 100;

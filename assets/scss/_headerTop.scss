@@ -37,7 +37,7 @@ $shadowThree: 0px 5px 30px rgba(17, 22, 30, 0.08);
                 padding-right: 0px;
             };
 
-            @include customResponsive(0px,1200px){
+            @include customResponsive(0px,992px){
                 &:nth-child(3){
                     border: none;
                     padding-right: 0px; 
